@@ -134,34 +134,6 @@ export default function ScaffoldingPage() {
               </div>
             </div>
 
-            {/* Right Emblem Scaffold Card (Slanted layout with NAEL logo) */}
-            <div className="flex justify-center lg:justify-end items-center lg:mr-12">
-              <div 
-                className="relative w-48 h-32 sm:w-64 sm:h-44 border-2 border-primary-yellow bg-[#0b0b0b] rounded-md overflow-hidden shadow-2xl flex items-center justify-center cursor-pointer group"
-                style={{
-                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)"
-                }}
-              >
-                {/* Underlay structural scaffold layout */}
-                <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" 
-                  alt="Certified Steel Scaffolding Access"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
-                />
-                {/* Teal overlay tint */}
-                <div className="absolute inset-0 bg-[#02534D]/50 group-hover:bg-[#02534D]/35 transition-colors z-10" />
-
-                {/* NAEL Logo Overlay */}
-                <div className="absolute top-4 right-4 z-20 p-2 bg-brand-black/35 backdrop-blur-md border border-primary-yellow/20 rounded-sm">
-                  <img 
-                    src="/naelksa/Nael Logo White.webp" 
-                    alt="NAEL Logo Emblem"
-                    className="w-14 sm:w-20 h-auto object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
 

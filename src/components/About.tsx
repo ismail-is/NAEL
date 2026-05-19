@@ -131,7 +131,7 @@ export default function About() {
               {/* Rounded Card frame */}
               <div className="relative w-full h-[360px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-brand-black/5 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=1200&auto=format&fit=crop"
+                  src="/naelksa/about_excellence.png"
                   alt="Construction Site Sunset"
                   className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-[4000ms]"
                   loading="lazy"

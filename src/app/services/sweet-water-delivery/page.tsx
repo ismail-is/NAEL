@@ -53,7 +53,7 @@ export default function SweetWaterPage() {
       id: 4,
       title: "Rig & Offshore Resources",
       desc: "Continuous pipeline or tank refilling operations to keep deep desert drill rigs, remote sites, and marine hubs operating under optimal fluid levels.",
-      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/rig_offshore.png",
       tag: "Industrial Rig"
     },
     {
@@ -68,7 +68,7 @@ export default function SweetWaterPage() {
       id: 6,
       title: "24/7 Fire & Safety Standby",
       desc: "Critical emergency standby water resources deployed on-site to assist high-risk hot works, steel works, and safety compliance checks.",
-      image: "https://images.unsplash.com/photo-1590486803833-ffc6f68e82f2?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/fire_safety_standby.png",
       tag: "Fire & Safety"
     }
   ];
@@ -137,34 +137,6 @@ export default function SweetWaterPage() {
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
                   <Droplet className="w-3.5 h-3.5 text-primary-yellow" /> Strict Quality Controls
                 </span>
-              </div>
-            </div>
-
-            {/* Right Emblem Mercedes Tanker Card (Slanted layout with NAEL logo and bottom watermark cropped) */}
-            <div className="flex justify-center lg:justify-end items-center lg:mr-12">
-              <div 
-                className="relative w-48 h-32 sm:w-64 sm:h-44 border-2 border-primary-yellow bg-[#0b0b0b] rounded-md overflow-hidden shadow-2xl flex items-center justify-center cursor-pointer group"
-                style={{
-                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)"
-                }}
-              >
-                {/* Underlay Mercedes tanker image with bottom 12% cropped via CSS to remove watermark */}
-                <img 
-                  src="/naelksa/sweet_water_tanker.jpg" 
-                  alt="Mercedes Blue Water Tanker"
-                  className="absolute top-0 w-full h-[112%] object-cover object-top group-hover:scale-105 transition-transform duration-700 opacity-90"
-                />
-                {/* Green/teal overlay tint */}
-                <div className="absolute inset-0 bg-[#02534D]/25 group-hover:bg-[#02534D]/15 transition-colors z-10" />
-
-                {/* NAEL Logo Overlay */}
-                <div className="absolute top-4 right-4 z-20 p-2 bg-brand-black/35 backdrop-blur-md border border-primary-yellow/20 rounded-sm">
-                  <img 
-                    src="/naelksa/Nael Logo White.webp" 
-                    alt="NAEL Logo Emblem"
-                    className="w-14 sm:w-20 h-auto object-contain"
-                  />
-                </div>
               </div>
             </div>
 

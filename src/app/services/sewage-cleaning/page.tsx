@@ -69,13 +69,13 @@ export default function SewageCleaningPage() {
     {
       title: "Sewer Pipe Restoration",
       desc: "Precision root-cutting, structural descaling, and high-impact pneumatic unclogging of buried lateral clay and PVC sewer pipelines.",
-      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/sewer_restoration.png",
       tag: "Pipe Clearing"
     },
     {
       title: "Pneumatic Suction Compressors",
       desc: "Access our state-of-the-art vacuum compressor fleet, delivering extreme negative pressure suction to pull heavy sludge, sediment, and thick mud.",
-      image: "https://images.unsplash.com/photo-1590486803833-ffc6f68e82f2?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/pneumatic_suction.png",
       tag: "Compressor Fleet"
     }
   ];
@@ -144,34 +144,6 @@ export default function SewageCleaningPage() {
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
                   <Clock className="w-3.5 h-3.5 text-primary-yellow" /> 24/7 Rapid Response
                 </span>
-              </div>
-            </div>
-
-            {/* Right Emblem Piping Card (Slanted layout with NAEL logo) */}
-            <div className="flex justify-center lg:justify-end items-center lg:mr-12">
-              <div 
-                className="relative w-48 h-32 sm:w-64 sm:h-44 border-2 border-primary-yellow bg-[#0b0b0b] rounded-md overflow-hidden shadow-2xl flex items-center justify-center cursor-pointer group"
-                style={{
-                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)"
-                }}
-              >
-                {/* Underlay wastewater industrial logistics image */}
-                <img 
-                  src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop" 
-                  alt="Industrial Wastewater Piping"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
-                />
-                {/* Teal overlay tint */}
-                <div className="absolute inset-0 bg-[#02534D]/50 group-hover:bg-[#02534D]/35 transition-colors z-10" />
-
-                {/* NAEL Logo Overlay */}
-                <div className="absolute top-4 right-4 z-20 p-2 bg-brand-black/35 backdrop-blur-md border border-primary-yellow/20 rounded-sm">
-                  <img 
-                    src="/naelksa/Nael Logo White.webp" 
-                    alt="NAEL Logo Emblem"
-                    className="w-14 sm:w-20 h-auto object-contain"
-                  />
-                </div>
               </div>
             </div>
 

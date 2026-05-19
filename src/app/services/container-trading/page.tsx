@@ -30,13 +30,13 @@ export default function ContainerTradingPage() {
     {
       title: "Dry Cargo Containers",
       desc: "Secure, weather-sealed dry storage containers engineered with high-tensile steel walls. Designed to keep general cargo moisture-free and safe from harsh environmental exposure.",
-      image: "https://images.unsplash.com/photo-1590486803833-ffc6f68e82f2?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/dry_cargo.png",
       tag: "Storage & Cargo"
     },
     {
       title: "Refrigerated Reefers",
       desc: "State-of-the-art temperature-controlled reefer units featuring advanced cold-chain automation. Crucial for the safe, reliable, and uniform transport of agricultural and pharmaceutical items.",
-      image: "https://images.unsplash.com/photo-1615461066841-6116ecdccd3e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/refrigerated_reefer.png",
       tag: "Cold Chain Logistics"
     },
     {
@@ -141,34 +141,6 @@ export default function ContainerTradingPage() {
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
                   <DollarSign className="w-3.5 h-3.5 text-primary-yellow" /> Competitive Pricing
                 </span>
-              </div>
-            </div>
-
-            {/* Right Emblem Cargo Box Container (Diagonal cut with NAEL branding) */}
-            <div className="flex justify-center lg:justify-end items-center lg:mr-12">
-              <div 
-                className="relative w-44 h-28 sm:w-60 sm:h-36 border-2 border-primary-yellow bg-primary-green rounded-md overflow-hidden shadow-2xl flex items-center justify-center cursor-pointer group"
-                style={{
-                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)"
-                }}
-              >
-                {/* Underlay container background */}
-                <img 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" 
-                  alt="Green container close up"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
-                />
-                {/* Darken overlay */}
-                <div className="absolute inset-0 bg-[#02534D]/75 group-hover:bg-[#02534D]/60 transition-colors z-10" />
-
-                {/* NAEL Logo Overlay */}
-                <div className="relative z-20 flex flex-col items-center">
-                  <img 
-                    src="/naelksa/Nael Logo White.webp" 
-                    alt="NAEL Logo Emblem"
-                    className="w-28 sm:w-36 h-auto object-contain drop-shadow-[0_0_10px_rgba(255,254,254,0.3)]"
-                  />
-                </div>
               </div>
             </div>
 
