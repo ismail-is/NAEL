@@ -166,12 +166,7 @@ export default function Footer() {
           <a href="#" className="hover:text-primary-yellow transition-colors">Terms of Service</a>
         </div>
         
-        <div className="flex items-center gap-1 select-none font-semibold">
-          <span>Designed with</span>
-          <Heart className="w-3.5 h-3.5 text-primary-yellow fill-primary-yellow animate-pulse" />
-          <span>by</span>
-          <span className="text-primary-yellow hover:text-white transition-colors cursor-pointer">NAEL</span>
-        </div>
+      
       </div>
 
     </footer>
