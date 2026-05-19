@@ -1,0 +1,480 @@
+import { Metadata } from "next";
+import Loader from "@/components/Loader";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { 
+  ShieldCheck, 
+  Globe, 
+  DollarSign, 
+  Clock, 
+  ArrowRight,
+  Package,
+  Layers,
+  Wrench,
+  Thermometer,
+  Container,
+  Truck,
+  MessageSquare,
+  Activity,
+  Zap,
+  Grid,
+  ZapOff
+} from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Heavy Equipment & Machinery Rental | NAEL Establishment",
+  description: "Certified heavy machinery and construction equipment rental in Al Jubail and Eastern Province, KSA. Rent Aramco-certified excavators, cranes, loaders, bulldozers, and generators.",
+};
+
+export default function EquipmentRentalPage() {
+  
+  // The 8 custom equipment rental offerings beautifully rephrased
+  const equipmentOfferings = [
+    {
+      title: "Crawler Excavators",
+      desc: "Heavy crawler excavators ranging from 20 to 50 tons, optimized for bulk earthmoving, deep trenching, rock breaking, and foundation works.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      tag: "Excavators"
+    },
+    {
+      title: "Mobile & Crawler Cranes",
+      desc: "All-terrain hydraulic mobile cranes and crawler cranes with lift capacities from 50 to 500 tons, managed by TUV-certified riggers and operators.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      tag: "Heavy Lifting"
+    },
+    {
+      title: "Wheel Loaders",
+      desc: "High-capacity wheel loaders with heavy-duty buckets. Ideal for bulk aggregate handling, site clearing, concrete batching support, and stockpile loading.",
+      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop",
+      tag: "Earthmoving"
+    },
+    {
+      title: "Heavy-Duty Bulldozers",
+      desc: "High-traction track bulldozers equipped with semi-U blades and multi-shank rippers, engineered for civil earthmoving, leveling, and site grading.",
+      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      tag: "Land Grading"
+    },
+    {
+      title: "Haulage & Dump Trucks",
+      desc: "Heavy-duty tri-axle dump trucks and flatbed transport trailers for high-volume rock, soil, aggregate, and cargo movement across KSA.",
+      image: "https://images.unsplash.com/photo-1590486803833-ffc6f68e82f2?q=80&w=800&auto=format&fit=crop",
+      tag: "Material Haulage"
+    },
+    {
+      title: "Industrial Air Compressors",
+      desc: "High-pressure portable diesel air compressors for industrial sandblasting, structural painting, and pneumatic power tool operations.",
+      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      tag: "Pneumatic Power"
+    },
+    {
+      title: "Mobile Diesel Generators",
+      desc: "Soundproof diesel generator units ranging from 50kVA to 1000kVA, supplying reliable temporary prime power to remote project sites.",
+      image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop",
+      tag: "Power Systems"
+    },
+    {
+      title: "Vibratory Soil Compactors",
+      desc: "Single-drum and double-drum vibratory road rollers, designed to achieve maximum density in soil, sub-base, and asphalt paving works.",
+      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
+      tag: "Soil Compaction"
+    }
+  ];
+
+  return (
+    <>
+      <Loader />
+      <Navbar />
+
+      <main className="flex-grow pt-[120px] bg-white select-none">
+
+        {/* ========================================================= */}
+        {/* 1. CINEMATIC HERO HEADER WITH EXCAVATOR OVERLAY           */}
+        {/* ========================================================= */}
+        <div className="relative w-full h-[320px] sm:h-[400px] bg-brand-black overflow-hidden flex items-center">
+          {/* Background twilight fresh water liquid */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
+              alt="Heavy Duty Machinery"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-brand-black/60 z-10" />
+          </div>
+
+          {/* Slanted Green Backdrop Overlay (Desktop only) */}
+          <div 
+            className="absolute top-0 bottom-0 left-0 w-full lg:w-[48%] bg-gradient-to-r from-primary-green to-primary-green/95 z-10 hidden lg:block"
+            style={{
+              clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)"
+            }}
+          />
+          {/* Mobile Dark Green Overlay */}
+          <div className="absolute inset-0 bg-primary-green/90 z-10 block lg:hidden" />
+
+          {/* Content Container */}
+          <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 flex flex-col lg:flex-row justify-between lg:items-center gap-8">
+            
+            {/* Left Texts Breadcrumbs */}
+            <div className="flex flex-col gap-2 max-w-2xl">
+              <div className="flex items-center gap-2 text-white/50 text-[9px] sm:text-xs uppercase tracking-widest font-bold mb-1">
+                <span>Home</span>
+                <span className="text-white/30">&gt;</span>
+                <span>Services</span>
+                <span className="text-white/30">&gt;</span>
+                <span className="text-primary-yellow">Equipment Rental</span>
+              </div>
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
+                SPECIALIZED IN
+              </span>
+              <h1 className="text-3xl sm:text-6xl font-bebas font-extrabold text-white tracking-wider leading-none">
+                EQUIPMENT <span className="text-primary-yellow">RENTAL</span>
+              </h1>
+              <p className="text-white/80 text-[11px] sm:text-sm font-light leading-relaxed mt-2 max-w-lg">
+                Providing high-performance heavy construction machinery, earthmoving equipment, and specialized lifting fleets on flexible short-term and long-term rental options.
+              </p>
+              
+              {/* Features Badges list */}
+              <div className="flex flex-wrap gap-3 mt-4 text-[9px] uppercase tracking-wider font-semibold text-white/95">
+                <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
+                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> TUV/Aramco Certified
+                </span>
+                <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
+                  <Wrench className="w-3.5 h-3.5 text-primary-yellow" /> Licensed heavy operators
+                </span>
+                <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
+                  <Clock className="w-3.5 h-3.5 text-primary-yellow" /> 24/7 Field Tech Support
+                </span>
+              </div>
+            </div>
+
+            {/* Right Emblem Excavator Card (Slanted layout with NAEL logo) */}
+            <div className="flex justify-center lg:justify-end items-center lg:mr-12">
+              <div 
+                className="relative w-48 h-32 sm:w-64 sm:h-44 border-2 border-primary-yellow bg-[#0b0b0b] rounded-md overflow-hidden shadow-2xl flex items-center justify-center cursor-pointer group"
+                style={{
+                  clipPath: "polygon(10% 0, 100% 0, 90% 100%, 0 100%)"
+                }}
+              >
+                {/* Underlay excavator twilight sunset image */}
+                <img 
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" 
+                  alt="Crawler Excavator Sunset"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
+                />
+                {/* Teal overlay tint */}
+                <div className="absolute inset-0 bg-[#02534D]/50 group-hover:bg-[#02534D]/35 transition-colors z-10" />
+
+                {/* NAEL Logo Overlay */}
+                <div className="absolute top-4 right-4 z-20 p-2 bg-brand-black/35 backdrop-blur-md border border-primary-yellow/20 rounded-sm">
+                  <img 
+                    src="/naelksa/Nael Logo White.webp" 
+                    alt="NAEL Logo Emblem"
+                    className="w-14 sm:w-20 h-auto object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ========================================================= */}
+        {/* 2. OVERVIEW SECTION (Pristine White Backdrop)            */}
+        {/* ========================================================= */}
+        <div className="w-full py-16 sm:py-24 px-4 sm:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              
+              {/* Left Column (Texts) */}
+              <div className="lg:col-span-5 flex flex-col gap-6">
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                    OVERVIEW
+                  </span>
+                  <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-tight">
+                    Heavy Duty Performance. <br />
+                    <span className="text-brand-black">Absolute Operational Uptime.</span>
+                  </h2>
+                  <div className="w-16 h-[3px] bg-primary-green mt-1" />
+                </div>
+
+                <p className="text-brand-black/80 text-xs sm:text-sm font-light leading-relaxed">
+                  We manage one of the most reliable and modern heavy machinery rental fleets in the Al Jubail industrial hub. From powerful crawler excavators and heavy cranes to wheel loaders and diesel generators, we provide absolute performance.
+                </p>
+
+                <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
+                  Every piece of equipment in our fleet undergoes stringent pre-mobilization safety audits and routine factory-maintenance checks, ensuring zero breakdown delays and 100% compliance with Saudi Aramco and SABIC site regulations.
+                </p>
+
+                <a 
+                  href="#contact"
+                  className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
+                >
+                  Get A Quote
+                  <ArrowRight className="w-4 h-4 text-primary-yellow" />
+                </a>
+              </div>
+
+              {/* Right Column (3 Vertical Cards) */}
+              <div className="lg:col-span-7 flex flex-col gap-4">
+                {[
+                  {
+                    title: "Aramco Certified Fleet",
+                    desc: "Every machine carries valid TUV and Aramco safety certificates for instant site access.",
+                    icon: ShieldCheck
+                  },
+                  {
+                    title: "On-Call Mobile Mechanics",
+                    desc: "Dedicated mobile service technicians deployed on-site 24/7 to guarantee maximum uptime.",
+                    icon: Wrench
+                  },
+                  {
+                    title: "Licensed Heavy Operators",
+                    desc: "Available with highly trained, certified heavy equipment operators holding active Aramco/SABIC licenses.",
+                    icon: Truck
+                  }
+                ].map((item, idx) => (
+                  <div 
+                    key={idx}
+                    className="p-5 bg-white border border-brand-black/5 rounded-xl hover:shadow-xl hover:border-primary-green/20 transition-all duration-300 flex items-start gap-4"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-primary-yellow/10 border border-primary-yellow/20 flex items-center justify-center text-primary-yellow shrink-0">
+                      <item.icon className="w-5 h-5" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <h3 className="font-bebas text-lg sm:text-xl font-bold text-primary-green tracking-wide">
+                        {item.title}
+                      </h3>
+                      <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        {/* ========================================================= */}
+        {/* 3. WHY CHOOSE US SECTION (Teal Backdrop)                  */}
+        {/* ========================================================= */}
+        <div className="w-full bg-[#012422] py-16 sm:py-24 px-4 sm:px-8 border-t border-white/5 text-white">
+          <div className="max-w-7xl mx-auto">
+            
+            {/* Header Title */}
+            <div className="flex flex-col gap-1 mb-12">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                WHY CHOOSE US
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
+                Our Commitment to Performance & Reliability
+              </h2>
+              <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
+            </div>
+
+            {/* Horizontal Strength Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: "Factory Maintained",
+                  desc: "Routine comprehensive engine, hydraulic, and structural testing for zero downtime.",
+                  icon: ShieldCheck
+                },
+                {
+                  title: "Rapid Mobilization",
+                  desc: "Instant machinery dispatch and heavy transport flatbed trailers for prompt site delivery.",
+                  icon: Clock
+                },
+                {
+                  title: "Flexible Contracts",
+                  desc: "Custom hourly, weekly, monthly, and yearly contract options tailored for project needs.",
+                  icon: DollarSign
+                },
+                {
+                  title: "24/7 Standby Support",
+                  desc: "Dedicated on-site field mechanics and support vehicles accompanying every large fleet rental.",
+                  icon: Wrench
+                }
+              ].map((strength, idx) => (
+                <div 
+                  key={idx}
+                  className="p-6 bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-primary-yellow/30 transition-all duration-300 rounded-sm flex flex-col items-center text-center group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary-yellow/15 flex items-center justify-center text-primary-yellow border border-primary-yellow/20 mb-4 group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
+                    <strength.icon className="w-5.5 h-5.5" />
+                  </div>
+                  <h3 className="font-bebas text-xl font-bold text-white tracking-wide mb-2">
+                    {strength.title}
+                  </h3>
+                  <p className="text-white/60 text-[11px] sm:text-xs font-light leading-relaxed">
+                    {strength.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ========================================================= */}
+        {/* 4. EQUIPMENT SERVICES GRID (8 Items Paraphrased & Polished) */}
+        {/* ========================================================= */}
+        <div className="w-full py-16 sm:py-24 px-4 sm:px-8 bg-white border-t border-brand-black/5">
+          <div className="max-w-7xl mx-auto">
+            
+            {/* Header Titles */}
+            <div className="flex flex-col gap-1 mb-12">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                RENTAL FLEET
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide">
+                Certified Heavy Machinery Fleet
+              </h2>
+              <div className="w-16 h-[3px] bg-primary-green mt-1" />
+            </div>
+
+            {/* 8-Card Responsive Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {equipmentOfferings.map((item, idx) => (
+                <div 
+                  key={idx}
+                  className="flex flex-col bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 overflow-hidden transition-all duration-500 group"
+                >
+                  {/* Photo cover container */}
+                  <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden">
+                    <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
+                    
+                    <img 
+                      src={item.image} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    
+                    {/* Glowing Accent Tag overlay */}
+                    <span className="absolute top-3 left-3 z-20 bg-primary-green/90 text-primary-yellow border border-primary-yellow/20 px-2 py-0.5 rounded-sm text-[9px] uppercase tracking-widest font-bold backdrop-blur-sm">
+                      {item.tag}
+                    </span>
+                  </div>
+
+                  {/* Descriptions block */}
+                  <div className="p-5 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
+                    <h3 className="font-bebas text-xl sm:text-2xl font-bold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-brand-black/75 text-[11px] sm:text-xs font-light leading-relaxed flex-grow">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ========================================================= */}
+        {/* 5. PROCESS HOW WE WORK SECTION (Dark Timeline)            */}
+        {/* ========================================================= */}
+        <div className="w-full bg-gradient-to-b from-brand-black via-[#012422] to-brand-black py-16 sm:py-24 px-4 sm:px-8 border-t border-white/5 text-white">
+          <div className="max-w-7xl mx-auto">
+            
+            {/* Header Titles */}
+            <div className="flex flex-col gap-1 mb-12 text-center items-center">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                OUR PROCESS
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
+                How We Mobilize Fleet
+              </h2>
+              <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
+            </div>
+
+            {/* horizontal timeline */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative mt-16">
+              
+              {/* Desktop connector line */}
+              <div className="absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-white/10 z-0 hidden md:block" />
+
+              {[
+                { step: "1", name: "Select Fleet", desc: "Choose appropriate machinery, tonnages, and boom/lift parameters." },
+                { step: "2", name: "TUV & Safety Check", desc: "Perform full physical testing and verify TUV/Aramco safety checklists." },
+                { step: "3", name: "Leasing Contract", desc: "Sign flexible hourly, monthly, or annual leasing agreements." },
+                { step: "4", name: "Flatbed Transport", desc: "Machinery safely loaded and hauled to your active worksite by our heavy transport team." },
+                { step: "5", name: "24/7 Field Support", desc: "Enjoy continuous mechanical standby support, maintenance, and operator rotations." }
+              ].map((proc, idx) => (
+                <div 
+                  key={idx}
+                  className="flex flex-col items-center text-center relative z-10 group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary-green border-2 border-primary-yellow text-primary-yellow font-bebas text-xl font-bold flex items-center justify-center shadow-lg group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
+                    {proc.step}
+                  </div>
+                  <h3 className="font-bebas text-xl font-bold text-white tracking-wide mt-4 mb-2 group-hover:text-primary-yellow transition-colors">
+                    {proc.name}
+                  </h3>
+                  <p className="text-white/60 text-[11px] sm:text-xs font-light leading-relaxed px-4">
+                    {proc.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* ========================================================= */}
+        {/* 6. CALL TO ACTION CONTAINER CARD                          */}
+        {/* ========================================================= */}
+        <div className="w-full py-16 px-4 sm:px-8 bg-white border-t border-brand-black/5">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-full rounded-2xl bg-gradient-to-r from-primary-green to-[#012422] p-8 sm:p-12 border border-primary-yellow/20 overflow-hidden shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 group">
+              {/* Radial glow background */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,204,0,0.06),transparent_60%)] pointer-events-none" />
+
+              <div className="flex flex-col gap-2 max-w-xl text-center md:text-left text-white">
+                <h3 className="font-bebas text-3xl sm:text-4xl font-extrabold tracking-wide leading-none">
+                  Need Heavy Machinery on Site?
+                </h3>
+                <p className="text-white/70 text-xs sm:text-sm font-light leading-relaxed">
+                  Get in touch with our heavy fleet coordinators today for certified machinery dispatch and competitive lease quotes.
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 shrink-0">
+                <a 
+                  href="#contact"
+                  className="px-6 py-3.5 bg-primary-yellow hover:bg-white text-brand-black font-semibold text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-primary-yellow/20"
+                >
+                  Get A Quote
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+
+                <a 
+                  href="https://wa.me/966510969975"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-3.5 bg-brand-black/60 hover:bg-brand-black border border-white/10 hover:border-primary-yellow text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <MessageSquare className="w-4 h-4 text-primary-yellow" />
+                  WhatsApp Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <Footer />
+    </>
+  );
+}
