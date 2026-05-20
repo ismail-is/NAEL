@@ -25,10 +25,14 @@ const navLinks = [
 
 const serviceDropdownItems = [
   { name: "Specialized in Container Trading", href: "/services/container-trading" },
-  { name: "Sweet water delivery", href: "/services/sweet-water-delivery" },
-  { name: "Sewage cleaning Services", href: "/services/sewage-cleaning" },
-  { name: "Scaffolding services", href: "/services/scaffolding" },
-  { name: "Equipment and Machinery Rental", href: "/services/equipment-rental" }
+  { name: "Sweet Water Delivery", href: "/services/sweet-water-delivery" },
+  { name: "Sewage Cleaning Services", href: "/services/sewage-cleaning" },
+  { name: "Scaffolding Services", href: "/services/scaffolding" },
+  { name: "Equipment & Machinery Rental", href: "/services/equipment-rental" },
+  { name: "Manpower Supply", href: "/services/manpower-supply" },
+  { name: "Fencing Services", href: "/services/fencing" },
+  { name: "Steel Fabrication", href: "/services/steel-fabrication" },
+  { name: "Porta Cabins", href: "/services/porta-cabins" }
 ];
 
 export default function Navbar() {

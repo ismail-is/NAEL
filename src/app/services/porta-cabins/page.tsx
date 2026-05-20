@@ -4,79 +4,62 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { 
   ShieldCheck, 
-  Globe, 
-  DollarSign, 
   Clock, 
   ArrowRight,
-  Package,
-  Layers,
   Wrench,
-  Thermometer,
-  Container,
-  Truck,
   MessageSquare,
-  Activity,
-  Zap,
   Grid,
-  ZapOff
+  Home,
+  Layers,
+  Thermometer,
+  Zap,
+  Truck
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Equipment & Machinery Rental | NAEL Establishment",
-  description: "Certified heavy machinery and construction equipment rental in Al Jubail and Eastern Province, KSA. Rent Aramco-certified excavators, cranes, loaders, bulldozers, and generators.",
+  title: "Prefabricated Porta Cabins | NAEL Establishment",
+  description: "Custom prefabricated porta cabins and modular buildings in Al Jubail, KSA. Mobile offices, labor camps, security cabins, and ablution units for industrial sites.",
 };
 
-export default function EquipmentRentalPage() {
+export default function PortaCabinsPage() {
   
-  // The 8 custom equipment rental offerings beautifully rephrased
-  const equipmentOfferings = [
+  // The custom porta cabin offerings beautifully phrased
+  const cabinOfferings = [
     {
-      title: "Crawler Excavators",
-      desc: "Heavy crawler excavators ranging from 20 to 50 tons, optimized for bulk earthmoving, deep trenching, rock breaking, and foundation works.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
-      tag: "Excavators"
+      title: "Mobile Site Offices",
+      desc: "Fully insulated, air-conditioned executive and engineering offices equipped with network cabling, designed for harsh desert climates.",
+      image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop",
+      tag: "Site Offices"
     },
     {
-      title: "Mobile & Crawler Cranes",
-      desc: "All-terrain hydraulic mobile cranes and crawler cranes with lift capacities from 50 to 500 tons, managed by TUV-certified riggers and operators.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
-      tag: "Heavy Lifting"
+      title: "Labor Accommodation Camps",
+      desc: "Multi-unit modular camps with robust structural steel framing, tailored to house massive workforces safely and comfortably.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+      tag: "Labor Camps"
     },
     {
-      title: "Wheel Loaders",
-      desc: "High-capacity wheel loaders with heavy-duty buckets. Ideal for bulk aggregate handling, site clearing, concrete batching support, and stockpile loading.",
-      image: "/naelksa/wheel_loaders.png",
-      tag: "Earthmoving"
+      title: "Security & Guard Cabins",
+      desc: "Compact, highly durable guard houses offering 360-degree visibility, impact resistance, and climate control for perimeter security.",
+      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      tag: "Security Hubs"
     },
     {
-      title: "Heavy-Duty Bulldozers",
-      desc: "High-traction track bulldozers equipped with semi-U blades and multi-shank rippers, engineered for civil earthmoving, leveling, and site grading.",
+      title: "Ablution & Sanitary Units",
+      desc: "Portable washrooms and shower blocks, fully plumbed with anti-slip flooring and corrosion-resistant fixtures.",
       image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
-      tag: "Land Grading"
+      tag: "Sanitary Blocks"
     },
     {
-      title: "Haulage & Dump Trucks",
-      desc: "Heavy-duty tri-axle dump trucks and flatbed transport trailers for high-volume rock, soil, aggregate, and cargo movement across KSA.",
-      image: "/naelksa/haulage_dump_trucks.png",
-      tag: "Material Haulage"
+      title: "Modified Storage Containers",
+      desc: "Heavy-duty steel shipping containers modified for secure on-site storage of expensive tools, machinery, and raw materials.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      tag: "Secure Storage"
     },
     {
-      title: "Industrial Air Compressors",
-      desc: "High-pressure portable diesel air compressors for industrial sandblasting, structural painting, and pneumatic power tool operations.",
-      image: "/naelksa/compressors.png",
-      tag: "Pneumatic Power"
-    },
-    {
-      title: "Mobile Diesel Generators",
-      desc: "Soundproof diesel generator units ranging from 50kVA to 1000kVA, supplying reliable temporary prime power to remote project sites.",
-      image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop",
-      tag: "Power Systems"
-    },
-    {
-      title: "Vibratory Soil Compactors",
-      desc: "Single-drum and double-drum vibratory road rollers, designed to achieve maximum density in soil, sub-base, and asphalt paving works.",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
-      tag: "Soil Compaction"
+      title: "Custom Modular Facilities",
+      desc: "Bespoke fabrication of modular mosques, mess halls, first-aid clinics, and multi-story complex structures for mega-projects.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      tag: "Custom Modular"
     }
   ];
 
@@ -88,17 +71,17 @@ export default function EquipmentRentalPage() {
       <main className="flex-grow pt-[120px] bg-white select-none">
 
         {/* ========================================================= */}
-        {/* 1. CINEMATIC HERO HEADER WITH EXCAVATOR OVERLAY           */}
+        {/* 1. CINEMATIC HERO HEADER WITH OVERLAY                     */}
         {/* ========================================================= */}
         <div className="relative w-full h-[320px] sm:h-[400px] bg-brand-black overflow-hidden flex items-center">
-          {/* Background twilight fresh water liquid */}
+          {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
-              alt="Heavy Duty Machinery"
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop"
+              alt="Prefabricated Porta Cabins"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-brand-black/60 z-10" />
+            <div className="absolute inset-0 bg-brand-black/75 z-10" />
           </div>
 
           {/* Slanted Green Backdrop Overlay (Desktop only) */}
@@ -121,28 +104,28 @@ export default function EquipmentRentalPage() {
                 <span className="text-white/30">&gt;</span>
                 <span>Services</span>
                 <span className="text-white/30">&gt;</span>
-                <span className="text-primary-yellow">Equipment & Machinery Rental</span>
+                <span className="text-primary-yellow">Porta Cabins</span>
               </div>
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
                 SPECIALIZED IN
               </span>
               <h1 className="text-3xl sm:text-6xl font-bebas font-extrabold text-white tracking-wider leading-none">
-                EQUIPMENT & <span className="text-primary-yellow">MACHINERY RENTAL</span>
+                PORTA <span className="text-primary-yellow">CABINS</span>
               </h1>
               <p className="text-white/80 text-[11px] sm:text-sm font-light leading-relaxed mt-2 max-w-lg">
-                Providing high-performance heavy construction machinery, earthmoving equipment, and specialized lifting fleets on flexible short-term and long-term rental options.
+                Designing and manufacturing heavy-duty, insulated prefabricated modular buildings and mobile porta cabins tailored for rapid deployment across industrial and remote worksites.
               </p>
               
               {/* Features Badges list */}
               <div className="flex flex-wrap gap-3 mt-4 text-[9px] uppercase tracking-wider font-semibold text-white/95">
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> TUV/Aramco Certified
+                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> Aramco Safety Approved
                 </span>
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <Wrench className="w-3.5 h-3.5 text-primary-yellow" /> Licensed heavy operators
+                  <Thermometer className="w-3.5 h-3.5 text-primary-yellow" /> Thermal Insulated
                 </span>
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <Clock className="w-3.5 h-3.5 text-primary-yellow" /> 24/7 Field Tech Support
+                  <Truck className="w-3.5 h-3.5 text-primary-yellow" /> Rapid Mobilization
                 </span>
               </div>
             </div>
@@ -165,25 +148,25 @@ export default function EquipmentRentalPage() {
                     OVERVIEW
                   </span>
                   <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-tight">
-                    Heavy Duty Performance. <br />
-                    <span className="text-brand-black">Absolute Operational Uptime.</span>
+                    Modular Flexibility. <br />
+                    <span className="text-brand-black">Structural Integrity.</span>
                   </h2>
                   <div className="w-16 h-[3px] bg-primary-green mt-1" />
                 </div>
 
                 <p className="text-brand-black/80 text-xs sm:text-sm font-light leading-relaxed">
-                  We manage one of the most reliable and modern heavy machinery rental fleets in the Al Jubail industrial hub. From powerful crawler excavators and heavy cranes to wheel loaders and diesel generators, we provide absolute performance.
+                  We are a leading manufacturer of prefabricated modular solutions in the Eastern Province. Our porta cabins provide highly customizable, comfortable, and scalable spaces perfectly suited for temporary and semi-permanent setups.
                 </p>
 
                 <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
-                  Every piece of equipment in our fleet undergoes stringent pre-mobilization safety audits and routine factory-maintenance checks, ensuring zero breakdown delays and 100% compliance with Saudi Aramco and SABIC site regulations.
+                  Built on heavy-duty steel skid bases, our cabins are engineered to endure frequent lifting and transportation while maintaining structural rigidity. Premium sandwich panels ensure maximum fire resistance and climate control.
                 </p>
 
                 <a 
                   href="#contact"
                   className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
                 >
-                  Get A Quote
+                  Order Custom Cabins
                   <ArrowRight className="w-4 h-4 text-primary-yellow" />
                 </a>
               </div>
@@ -192,19 +175,19 @@ export default function EquipmentRentalPage() {
               <div className="lg:col-span-7 flex flex-col gap-4">
                 {[
                   {
-                    title: "Aramco Certified Fleet",
-                    desc: "Every machine carries valid TUV and Aramco safety certificates for instant site access.",
-                    icon: ShieldCheck
+                    title: "Advanced Insulation",
+                    desc: "Polyurethane (PU) and rockwool sandwich panels designed to drastically reduce HVAC power consumption.",
+                    icon: Thermometer
                   },
                   {
-                    title: "On-Call Mobile Mechanics",
-                    desc: "Dedicated mobile service technicians deployed on-site 24/7 to guarantee maximum uptime.",
-                    icon: Wrench
+                    title: "Plug & Play Utilities",
+                    desc: "Pre-wired electrical DB boards, data networks, and fully integrated plumbing ready for immediate use.",
+                    icon: Zap
                   },
                   {
-                    title: "Licensed Heavy Operators",
-                    desc: "Available with highly trained, certified heavy equipment operators holding active Aramco/SABIC licenses.",
-                    icon: Truck
+                    title: "Heavy-Duty Base Skids",
+                    desc: "Reinforced steel undercarriages allowing for multiple relocations without structural compromise.",
+                    icon: Layers
                   }
                 ].map((item, idx) => (
                   <div 
@@ -243,7 +226,7 @@ export default function EquipmentRentalPage() {
                 WHY CHOOSE US
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
-                Our Commitment to Performance & Reliability
+                Engineered for Comfort & Durability
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
             </div>
@@ -252,24 +235,24 @@ export default function EquipmentRentalPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  title: "Factory Maintained",
-                  desc: "Routine comprehensive engine, hydraulic, and structural testing for zero downtime.",
-                  icon: ShieldCheck
-                },
-                {
-                  title: "Rapid Mobilization",
-                  desc: "Instant machinery dispatch and heavy transport flatbed trailers for prompt site delivery.",
+                  title: "Rapid Assembly",
+                  desc: "Streamlined manufacturing reducing delivery times from months to mere weeks.",
                   icon: Clock
                 },
                 {
-                  title: "Flexible Contracts",
-                  desc: "Custom hourly, weekly, monthly, and yearly contract options tailored for project needs.",
-                  icon: DollarSign
+                  title: "Turnkey Interiors",
+                  desc: "Custom flooring, partitions, lighting, and furniture packages fully installed prior to delivery.",
+                  icon: Home
                 },
                 {
-                  title: "24/7 Standby Support",
-                  desc: "Dedicated on-site field mechanics and support vehicles accompanying every large fleet rental.",
-                  icon: Wrench
+                  title: "Strict Fire Safety",
+                  desc: "Utilizing civil defense-approved fire-retardant materials and smoke detection systems.",
+                  icon: ShieldCheck
+                },
+                {
+                  title: "Scalable Camps",
+                  desc: "Multi-level stacking and interconnected modules to maximize confined land spaces.",
+                  icon: Grid
                 }
               ].map((strength, idx) => (
                 <div 
@@ -294,7 +277,7 @@ export default function EquipmentRentalPage() {
 
 
         {/* ========================================================= */}
-        {/* 4. EQUIPMENT SERVICES GRID (8 Items Paraphrased & Polished) */}
+        {/* 4. SERVICES GRID (6 Items Paraphrased & Polished)         */}
         {/* ========================================================= */}
         <div className="w-full py-16 sm:py-24 px-4 sm:px-8 bg-white border-t border-brand-black/5">
           <div className="max-w-7xl mx-auto">
@@ -302,23 +285,23 @@ export default function EquipmentRentalPage() {
             {/* Header Titles */}
             <div className="flex flex-col gap-1 mb-12">
               <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
-                RENTAL FLEET
+                MODULAR PORTFOLIO
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide">
-                Certified Heavy Machinery Fleet
+                Prefabricated Solutions
               </h2>
               <div className="w-16 h-[3px] bg-primary-green mt-1" />
             </div>
 
-            {/* 8-Card Responsive Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {equipmentOfferings.map((item, idx) => (
+            {/* 6-Card Responsive Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cabinOfferings.map((item, idx) => (
                 <div 
                   key={idx}
                   className="flex flex-col bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 overflow-hidden transition-all duration-500 group"
                 >
                   {/* Photo cover container */}
-                  <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden">
+                  <div className="relative w-full h-[200px] overflow-hidden">
                     <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
                     
                     <img 
@@ -335,7 +318,7 @@ export default function EquipmentRentalPage() {
                   </div>
 
                   {/* Descriptions block */}
-                  <div className="p-5 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
+                  <div className="p-6 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
                     <h3 className="font-bebas text-xl sm:text-2xl font-bold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
                       {item.title}
                     </h3>
@@ -363,7 +346,7 @@ export default function EquipmentRentalPage() {
                 OUR PROCESS
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
-                How We Mobilize Fleet
+                How We Build Modules
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
             </div>
@@ -375,11 +358,11 @@ export default function EquipmentRentalPage() {
               <div className="absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-white/10 z-0 hidden md:block" />
 
               {[
-                { step: "1", name: "Select Fleet", desc: "Choose appropriate machinery, tonnages, and boom/lift parameters." },
-                { step: "2", name: "TUV & Safety Check", desc: "Perform full physical testing and verify TUV/Aramco safety checklists." },
-                { step: "3", name: "Leasing Contract", desc: "Sign flexible hourly, monthly, or annual leasing agreements." },
-                { step: "4", name: "Flatbed Transport", desc: "Machinery safely loaded and hauled to your active worksite by our heavy transport team." },
-                { step: "5", name: "24/7 Field Support", desc: "Enjoy continuous mechanical standby support, maintenance, and operator rotations." }
+                { step: "1", name: "Design & Plan", desc: "Collaborating to generate 2D/3D floor plans and specifying insulation parameters." },
+                { step: "2", name: "Steel Skeleton", desc: "Fabricating heavy-duty floor skids and hot-rolled structural frames." },
+                { step: "3", name: "Paneling & Roof", desc: "Installing fire-rated sandwich panels, roofing, and weatherproof seals." },
+                { step: "4", name: "MEP Integration", desc: "Routing concealed electrical wiring, plumbing, and HVAC systems." },
+                { step: "5", name: "Logistics", desc: "Quality inspection followed by crane loading and flatbed transport to site." }
               ].map((proc, idx) => (
                 <div 
                   key={idx}
@@ -413,10 +396,10 @@ export default function EquipmentRentalPage() {
 
               <div className="flex flex-col gap-2 max-w-xl text-center md:text-left text-white">
                 <h3 className="font-bebas text-3xl sm:text-4xl font-extrabold tracking-wide leading-none">
-                  Need Heavy Machinery on Site?
+                  Need Portable Facilities?
                 </h3>
                 <p className="text-white/70 text-xs sm:text-sm font-light leading-relaxed">
-                  Get in touch with our heavy fleet coordinators today for certified machinery dispatch and competitive lease quotes.
+                  Fast-track your site mobilization with our premium porta cabins. Contact our team today for floor plans and manufacturing quotes.
                 </p>
               </div>
 

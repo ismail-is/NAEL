@@ -7,6 +7,10 @@ import {
   Trash2, 
   Grid3X3, 
   Truck, 
+  Users,
+  Shield,
+  Wrench,
+  Home,
   ArrowUpRight 
 } from "lucide-react";
 
@@ -56,6 +60,42 @@ const servicesList = [
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
     icon: Truck,
   },
+  {
+    id: 6,
+    num: "6",
+    title: "Manpower Supply",
+    subtitle: "Manpower Supply",
+    description: "Providing highly trained, skilled, and semi-skilled manpower tailored to meet the rigorous demands of industrial, commercial, and construction projects.",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+    icon: Users,
+  },
+  {
+    id: 7,
+    num: "7",
+    title: "Fencing Services",
+    subtitle: "Fencing",
+    description: "High-security industrial fencing solutions, including chain link, wire mesh, and barricades, designed for safety and robust perimeter protection of project sites.",
+    image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+    icon: Shield,
+  },
+  {
+    id: 8,
+    num: "8",
+    title: "Steel Fabrication",
+    subtitle: "Steel Fabrication",
+    description: "Custom structural steel fabrication services delivering precision-engineered components, heavy frames, and supports for complex industrial applications.",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+    icon: Wrench,
+  },
+  {
+    id: 9,
+    num: "9",
+    title: "Porta Cabins",
+    subtitle: "Porta Cabins",
+    description: "Supplying fully equipped, highly customizable portable cabins for on-site offices, labor accommodations, and mobile facilities with rapid installation.",
+    image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop",
+    icon: Home,
+  }
 ];
 
 export default function Services() {
@@ -85,18 +125,17 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Replicated High-Fidelity 3-and-2 Grid (Responsive layout) */}
+        {/* Fully Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           
-          {/* First Row: 3 cards (takes lg:col-span-2 each) */}
-          {servicesList.slice(0, 3).map((svc, i) => (
+          {servicesList.map((svc, i) => (
             <motion.div
               key={svc.id}
               className="lg:col-span-2 flex flex-col group relative bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 transition-all duration-500 interactive-card"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: i * 0.15, duration: 0.6, ease: "easeOut" }}
+              transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }}
               whileHover={{ y: -8 }}
             >
               {/* Service Card Top Image */}
@@ -140,79 +179,29 @@ export default function Services() {
                       : svc.id === 2 
                       ? "/services/sweet-water-delivery" 
                       : svc.id === 3 
-                      ? "/services/sewage-cleaning" 
+                      ? "/services/sewage-cleaning"
+                      : svc.id === 4
+                      ? "/services/scaffolding"
+                      : svc.id === 5
+                      ? "/services/equipment-rental" 
+                      : svc.id === 6
+                      ? "/services/manpower-supply"
+                      : svc.id === 7
+                      ? "/services/fencing"
+                      : svc.id === 8
+                      ? "/services/steel-fabrication"
+                      : svc.id === 9
+                      ? "/services/porta-cabins"
                       : "#contact"
                   } 
                   className="text-primary-green group-hover:text-primary-yellow text-xs font-extrabold uppercase tracking-widest flex items-center gap-1.5 transition-colors"
                 >
-                  {svc.id === 1 || svc.id === 2 || svc.id === 3 ? "Explore Service" : "Request Service"}
+                  {svc.id <= 9 ? "Explore Service" : "Request Service"}
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
               </div>
             </motion.div>
           ))}
-
-          {/* Second Row: 2 cards (centered on desktop, takes lg:col-span-2 each) */}
-          {servicesList.slice(3, 5).map((svc, i) => {
-            const colStartClass = i === 0 ? "lg:col-start-2" : "lg:col-start-4";
-            
-            return (
-              <motion.div
-                key={svc.id}
-                className={`lg:col-span-2 flex flex-col group relative bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 transition-all duration-500 interactive-card ${colStartClass}`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ delay: (i + 3) * 0.15, duration: 0.6, ease: "easeOut" }}
-                whileHover={{ y: -8 }}
-              >
-                {/* Service Card Top Image */}
-                <div className="relative w-full h-[220px] overflow-hidden rounded-t-sm">
-                  <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
-                  <img 
-                    src={svc.image} 
-                    alt={svc.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Overlapping Rounded Yellow Icon Badge */}
-                <div className="absolute top-[195px] left-6 z-20 w-12 h-12 rounded-full bg-primary-yellow flex items-center justify-center border-2 border-white shadow-md group-hover:bg-primary-green group-hover:rotate-12 transition-all duration-500">
-                  <svc.icon className="w-5 h-5 text-brand-black group-hover:text-primary-yellow transition-colors" />
-                </div>
-
-                {/* Service Card Lower Description */}
-                <div className="p-6 pt-10 flex flex-col flex-grow bg-white rounded-b-sm border-t border-brand-black/5">
-                  <span className="text-xs font-bold text-primary-yellow uppercase tracking-widest mb-1.5">
-                    Service {svc.num}
-                  </span>
-                  <h3 className="text-2xl font-bebas font-extrabold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-3">
-                    {svc.title}
-                  </h3>
-                  <p className="text-brand-black/75 text-xs sm:text-sm font-light leading-relaxed mb-6 flex-grow">
-                    {svc.description}
-                  </p>
-
-                  <div className="w-full h-[1px] bg-brand-black/10 my-4" />
-
-                  <a 
-                    href={
-                      svc.id === 4 
-                        ? "/services/scaffolding" 
-                        : svc.id === 5 
-                        ? "/services/equipment-rental" 
-                        : "#contact"
-                    } 
-                    className="text-primary-green group-hover:text-primary-yellow text-xs font-extrabold uppercase tracking-widest flex items-center gap-1.5 transition-colors"
-                  >
-                    {svc.id === 4 || svc.id === 5 ? "Explore Service" : "Request Service"}
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </a>
-                </div>
-              </motion.div>
-            );
-          })}
 
         </div>
 

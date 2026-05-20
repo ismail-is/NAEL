@@ -136,17 +136,6 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Highlighted License Badging (Premium Dual Badges) */}
-            <div className="flex flex-wrap items-center gap-3.5 mt-2">
-              <div className="px-4 py-2 bg-[#121212]/80 border-l-2 border-primary-yellow backdrop-blur-md rounded-sm flex flex-col shadow-lg shadow-black/20 hover:border-white transition-all duration-300">
-                <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-primary-yellow font-extrabold">Corporate C.R.</span>
-                <span className="text-xs sm:text-sm font-bold text-white mt-0.5 tracking-widest">7004352311</span>
-              </div>
-              <div className="px-4 py-2 bg-[#121212]/80 border-l-2 border-primary-green backdrop-blur-md rounded-sm flex flex-col shadow-lg shadow-black/20 hover:border-white transition-all duration-300">
-                <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-primary-green font-extrabold">Contracting C.R.</span>
-                <span className="text-xs sm:text-sm font-bold text-white mt-0.5 tracking-widest">2050116599</span>
-              </div>
-            </div>
 
             {/* Explore Buttons */}
             <div className="flex flex-wrap gap-4 mt-2">

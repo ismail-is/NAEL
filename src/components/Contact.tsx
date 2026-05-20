@@ -255,7 +255,11 @@ Message: ${formData.message || "N/A"}`;
                     <option value="Sweet Water Delivery">2. Sweet Water Delivery</option>
                     <option value="Sewage Cleaning Services">3. Sewage Vacuum Suction</option>
                     <option value="Scaffolding Services">4. Scaffolding Services</option>
-                    <option value="Equipment & Machinery Rental">5. Heavy Machinery Rental</option>
+                    <option value="Equipment & Machinery Rental">5. Heavy Equipment Rental</option>
+                    <option value="Manpower Supply">6. Manpower Supply</option>
+                    <option value="Industrial Fencing">7. Industrial Fencing Solutions</option>
+                    <option value="Steel Fabrication">8. Steel Fabrication</option>
+                    <option value="Porta Cabins">9. Porta Cabins</option>
                   </select>
                 </div>
               </div>

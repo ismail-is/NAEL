@@ -4,79 +4,61 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { 
   ShieldCheck, 
-  Globe, 
-  DollarSign, 
   Clock, 
   ArrowRight,
-  Package,
-  Layers,
   Wrench,
-  Thermometer,
-  Container,
-  Truck,
   MessageSquare,
-  Activity,
-  Zap,
   Grid,
-  ZapOff
+  Zap,
+  Hammer,
+  Maximize,
+  HardHat
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Equipment & Machinery Rental | NAEL Establishment",
-  description: "Certified heavy machinery and construction equipment rental in Al Jubail and Eastern Province, KSA. Rent Aramco-certified excavators, cranes, loaders, bulldozers, and generators.",
+  title: "Structural Steel Fabrication | NAEL Establishment",
+  description: "Precision steel fabrication services in Al Jubail, KSA. Custom structural steel, piping spools, industrial tanks, and heavy welding tailored to Aramco/SABIC standards.",
 };
 
-export default function EquipmentRentalPage() {
+export default function SteelFabricationPage() {
   
-  // The 8 custom equipment rental offerings beautifully rephrased
-  const equipmentOfferings = [
+  // The custom steel fabrication offerings beautifully phrased
+  const fabricationOfferings = [
     {
-      title: "Crawler Excavators",
-      desc: "Heavy crawler excavators ranging from 20 to 50 tons, optimized for bulk earthmoving, deep trenching, rock breaking, and foundation works.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
-      tag: "Excavators"
+      title: "Structural Steel Fabrication",
+      desc: "Heavy-duty steel beams, columns, and roof trusses fabricated to exact engineering specifications for large-scale industrial complexes.",
+      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+      tag: "Structural Steel"
     },
     {
-      title: "Mobile & Crawler Cranes",
-      desc: "All-terrain hydraulic mobile cranes and crawler cranes with lift capacities from 50 to 500 tons, managed by TUV-certified riggers and operators.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
-      tag: "Heavy Lifting"
-    },
-    {
-      title: "Wheel Loaders",
-      desc: "High-capacity wheel loaders with heavy-duty buckets. Ideal for bulk aggregate handling, site clearing, concrete batching support, and stockpile loading.",
-      image: "/naelksa/wheel_loaders.png",
-      tag: "Earthmoving"
-    },
-    {
-      title: "Heavy-Duty Bulldozers",
-      desc: "High-traction track bulldozers equipped with semi-U blades and multi-shank rippers, engineered for civil earthmoving, leveling, and site grading.",
+      title: "Industrial Piping & Spooling",
+      desc: "High-precision pipe spool fabrication for petrochemical plants, designed to handle extreme high-pressure fluid and gas transfers.",
       image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
-      tag: "Land Grading"
+      tag: "Pipe Spools"
     },
     {
-      title: "Haulage & Dump Trucks",
-      desc: "Heavy-duty tri-axle dump trucks and flatbed transport trailers for high-volume rock, soil, aggregate, and cargo movement across KSA.",
-      image: "/naelksa/haulage_dump_trucks.png",
-      tag: "Material Haulage"
+      title: "Storage Tanks & Vessels",
+      desc: "Custom-engineered carbon steel and stainless steel storage tanks designed for bulk liquid storage and chemical containment.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+      tag: "Tank Fabrication"
     },
     {
-      title: "Industrial Air Compressors",
-      desc: "High-pressure portable diesel air compressors for industrial sandblasting, structural painting, and pneumatic power tool operations.",
-      image: "/naelksa/compressors.png",
-      tag: "Pneumatic Power"
+      title: "Access Platforms & Gratings",
+      desc: "Galvanized catwalks, multi-level stairways, handrails, and industrial grating systems designed for safe plant access and maintenance.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      tag: "Access Structures"
     },
     {
-      title: "Mobile Diesel Generators",
-      desc: "Soundproof diesel generator units ranging from 50kVA to 1000kVA, supplying reliable temporary prime power to remote project sites.",
-      image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop",
-      tag: "Power Systems"
+      title: "CNC Plasma & Laser Cutting",
+      desc: "Computer-controlled precision cutting and drilling of thick steel plates, ensuring absolute dimensional accuracy and smooth finishes.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      tag: "Precision Cutting"
     },
     {
-      title: "Vibratory Soil Compactors",
-      desc: "Single-drum and double-drum vibratory road rollers, designed to achieve maximum density in soil, sub-base, and asphalt paving works.",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
-      tag: "Soil Compaction"
+      title: "On-Site Welding & Erection",
+      desc: "Certified TIG/MIG welding technicians deployed directly to your project site for seamless structural assembly and heavy equipment integration.",
+      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      tag: "Site Welding"
     }
   ];
 
@@ -88,17 +70,17 @@ export default function EquipmentRentalPage() {
       <main className="flex-grow pt-[120px] bg-white select-none">
 
         {/* ========================================================= */}
-        {/* 1. CINEMATIC HERO HEADER WITH EXCAVATOR OVERLAY           */}
+        {/* 1. CINEMATIC HERO HEADER WITH OVERLAY                     */}
         {/* ========================================================= */}
         <div className="relative w-full h-[320px] sm:h-[400px] bg-brand-black overflow-hidden flex items-center">
-          {/* Background twilight fresh water liquid */}
+          {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
-              alt="Heavy Duty Machinery"
+              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop"
+              alt="Industrial Steel Fabrication"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-brand-black/60 z-10" />
+            <div className="absolute inset-0 bg-brand-black/70 z-10" />
           </div>
 
           {/* Slanted Green Backdrop Overlay (Desktop only) */}
@@ -121,28 +103,28 @@ export default function EquipmentRentalPage() {
                 <span className="text-white/30">&gt;</span>
                 <span>Services</span>
                 <span className="text-white/30">&gt;</span>
-                <span className="text-primary-yellow">Equipment & Machinery Rental</span>
+                <span className="text-primary-yellow">Steel Fabrication</span>
               </div>
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
                 SPECIALIZED IN
               </span>
               <h1 className="text-3xl sm:text-6xl font-bebas font-extrabold text-white tracking-wider leading-none">
-                EQUIPMENT & <span className="text-primary-yellow">MACHINERY RENTAL</span>
+                STEEL <span className="text-primary-yellow">FABRICATION</span>
               </h1>
               <p className="text-white/80 text-[11px] sm:text-sm font-light leading-relaxed mt-2 max-w-lg">
-                Providing high-performance heavy construction machinery, earthmoving equipment, and specialized lifting fleets on flexible short-term and long-term rental options.
+                Delivering highly precise structural steel and custom piping fabrication, engineered to meet the strictest industrial standards in the Eastern Province.
               </p>
               
               {/* Features Badges list */}
               <div className="flex flex-wrap gap-3 mt-4 text-[9px] uppercase tracking-wider font-semibold text-white/95">
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> TUV/Aramco Certified
+                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> Aramco Quality Compliant
                 </span>
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <Wrench className="w-3.5 h-3.5 text-primary-yellow" /> Licensed heavy operators
+                  <Zap className="w-3.5 h-3.5 text-primary-yellow" /> Precision CNC Milling
                 </span>
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <Clock className="w-3.5 h-3.5 text-primary-yellow" /> 24/7 Field Tech Support
+                  <Wrench className="w-3.5 h-3.5 text-primary-yellow" /> Heavy Industrial Welding
                 </span>
               </div>
             </div>
@@ -165,25 +147,25 @@ export default function EquipmentRentalPage() {
                     OVERVIEW
                   </span>
                   <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-tight">
-                    Heavy Duty Performance. <br />
-                    <span className="text-brand-black">Absolute Operational Uptime.</span>
+                    Shaping Steel. <br />
+                    <span className="text-brand-black">Building Infrastructure.</span>
                   </h2>
                   <div className="w-16 h-[3px] bg-primary-green mt-1" />
                 </div>
 
                 <p className="text-brand-black/80 text-xs sm:text-sm font-light leading-relaxed">
-                  We manage one of the most reliable and modern heavy machinery rental fleets in the Al Jubail industrial hub. From powerful crawler excavators and heavy cranes to wheel loaders and diesel generators, we provide absolute performance.
+                  Located in the heart of Al Jubail, our advanced fabrication yard is fully equipped to handle large-tonnage structural steel production, serving massive refinery expansions, civil construction projects, and offshore infrastructure.
                 </p>
 
                 <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
-                  Every piece of equipment in our fleet undergoes stringent pre-mobilization safety audits and routine factory-maintenance checks, ensuring zero breakdown delays and 100% compliance with Saudi Aramco and SABIC site regulations.
+                  Every beam, pipe spool, and tank that leaves our yard is subjected to rigorous Non-Destructive Testing (NDT) to verify absolute weld integrity, guaranteeing zero defects and seamless on-site erection.
                 </p>
 
                 <a 
                   href="#contact"
                   className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
                 >
-                  Get A Quote
+                  Discuss Your Project
                   <ArrowRight className="w-4 h-4 text-primary-yellow" />
                 </a>
               </div>
@@ -192,19 +174,19 @@ export default function EquipmentRentalPage() {
               <div className="lg:col-span-7 flex flex-col gap-4">
                 {[
                   {
-                    title: "Aramco Certified Fleet",
-                    desc: "Every machine carries valid TUV and Aramco safety certificates for instant site access.",
+                    title: "Advanced Fabrication Yard",
+                    desc: "Expansive local facility outfitted with heavy overhead cranes, CNC machines, and heavy rolling equipment.",
+                    icon: Hammer
+                  },
+                  {
+                    title: "Rigorous QA/QC Testing",
+                    desc: "Comprehensive testing including X-Ray, Ultrasonic, and Magnetic Particle inspection for flawless welds.",
                     icon: ShieldCheck
                   },
                   {
-                    title: "On-Call Mobile Mechanics",
-                    desc: "Dedicated mobile service technicians deployed on-site 24/7 to guarantee maximum uptime.",
-                    icon: Wrench
-                  },
-                  {
-                    title: "Licensed Heavy Operators",
-                    desc: "Available with highly trained, certified heavy equipment operators holding active Aramco/SABIC licenses.",
-                    icon: Truck
+                    title: "Certified Welders",
+                    desc: "Highly skilled fabrication team holding specialized 6G welding certifications for high-pressure spools.",
+                    icon: HardHat
                   }
                 ].map((item, idx) => (
                   <div 
@@ -243,7 +225,7 @@ export default function EquipmentRentalPage() {
                 WHY CHOOSE US
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
-                Our Commitment to Performance & Reliability
+                Engineered for Heavy Industry
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
             </div>
@@ -252,24 +234,24 @@ export default function EquipmentRentalPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  title: "Factory Maintained",
-                  desc: "Routine comprehensive engine, hydraulic, and structural testing for zero downtime.",
+                  title: "Absolute Precision",
+                  desc: "Zero-tolerance engineering using advanced CNC plasma cutters for exact component fit.",
+                  icon: Maximize
+                },
+                {
+                  title: "High Production Capacity",
+                  desc: "Capable of processing thousands of tons of raw steel monthly to meet fast-track schedules.",
+                  icon: Zap
+                },
+                {
+                  title: "Anti-Corrosion Mastery",
+                  desc: "Providing professional sandblasting and industrial epoxy painting for extreme longevity.",
                   icon: ShieldCheck
                 },
                 {
-                  title: "Rapid Mobilization",
-                  desc: "Instant machinery dispatch and heavy transport flatbed trailers for prompt site delivery.",
-                  icon: Clock
-                },
-                {
-                  title: "Flexible Contracts",
-                  desc: "Custom hourly, weekly, monthly, and yearly contract options tailored for project needs.",
-                  icon: DollarSign
-                },
-                {
-                  title: "24/7 Standby Support",
-                  desc: "Dedicated on-site field mechanics and support vehicles accompanying every large fleet rental.",
-                  icon: Wrench
+                  title: "Turnkey Execution",
+                  desc: "From raw steel drafting to on-site assembly and structural bolting, we handle it all.",
+                  icon: Grid
                 }
               ].map((strength, idx) => (
                 <div 
@@ -294,7 +276,7 @@ export default function EquipmentRentalPage() {
 
 
         {/* ========================================================= */}
-        {/* 4. EQUIPMENT SERVICES GRID (8 Items Paraphrased & Polished) */}
+        {/* 4. SERVICES GRID (6 Items Paraphrased & Polished)         */}
         {/* ========================================================= */}
         <div className="w-full py-16 sm:py-24 px-4 sm:px-8 bg-white border-t border-brand-black/5">
           <div className="max-w-7xl mx-auto">
@@ -302,23 +284,23 @@ export default function EquipmentRentalPage() {
             {/* Header Titles */}
             <div className="flex flex-col gap-1 mb-12">
               <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
-                RENTAL FLEET
+                FABRICATION CAPABILITIES
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide">
-                Certified Heavy Machinery Fleet
+                Specialized Metal Works
               </h2>
               <div className="w-16 h-[3px] bg-primary-green mt-1" />
             </div>
 
-            {/* 8-Card Responsive Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {equipmentOfferings.map((item, idx) => (
+            {/* 6-Card Responsive Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {fabricationOfferings.map((item, idx) => (
                 <div 
                   key={idx}
                   className="flex flex-col bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 overflow-hidden transition-all duration-500 group"
                 >
                   {/* Photo cover container */}
-                  <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden">
+                  <div className="relative w-full h-[200px] overflow-hidden">
                     <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
                     
                     <img 
@@ -335,7 +317,7 @@ export default function EquipmentRentalPage() {
                   </div>
 
                   {/* Descriptions block */}
-                  <div className="p-5 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
+                  <div className="p-6 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
                     <h3 className="font-bebas text-xl sm:text-2xl font-bold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
                       {item.title}
                     </h3>
@@ -363,7 +345,7 @@ export default function EquipmentRentalPage() {
                 OUR PROCESS
               </span>
               <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
-                How We Mobilize Fleet
+                How We Fabricate Steel
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
             </div>
@@ -375,11 +357,11 @@ export default function EquipmentRentalPage() {
               <div className="absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-white/10 z-0 hidden md:block" />
 
               {[
-                { step: "1", name: "Select Fleet", desc: "Choose appropriate machinery, tonnages, and boom/lift parameters." },
-                { step: "2", name: "TUV & Safety Check", desc: "Perform full physical testing and verify TUV/Aramco safety checklists." },
-                { step: "3", name: "Leasing Contract", desc: "Sign flexible hourly, monthly, or annual leasing agreements." },
-                { step: "4", name: "Flatbed Transport", desc: "Machinery safely loaded and hauled to your active worksite by our heavy transport team." },
-                { step: "5", name: "24/7 Field Support", desc: "Enjoy continuous mechanical standby support, maintenance, and operator rotations." }
+                { step: "1", name: "CAD Detailing", desc: "Our draftsmen generate precise 3D workshop drawings based on architectural specs." },
+                { step: "2", name: "Material Sourcing", desc: "Procuring high-grade carbon/stainless steel with verified mill test certificates." },
+                { step: "3", name: "CNC Machining", desc: "Automated precision cutting, beveling, and drilling of raw materials." },
+                { step: "4", name: "Heavy Welding", desc: "Structural assembly and multi-pass welding by highly certified technicians." },
+                { step: "5", name: "NDT & Coating", desc: "Flaw detection via X-Ray/UT, followed by protective industrial coating." }
               ].map((proc, idx) => (
                 <div 
                   key={idx}
@@ -413,10 +395,10 @@ export default function EquipmentRentalPage() {
 
               <div className="flex flex-col gap-2 max-w-xl text-center md:text-left text-white">
                 <h3 className="font-bebas text-3xl sm:text-4xl font-extrabold tracking-wide leading-none">
-                  Need Heavy Machinery on Site?
+                  Need Custom Steel Fabrication?
                 </h3>
                 <p className="text-white/70 text-xs sm:text-sm font-light leading-relaxed">
-                  Get in touch with our heavy fleet coordinators today for certified machinery dispatch and competitive lease quotes.
+                  Partner with us for defect-free structural steel and piping. Contact our engineering desk today for a detailed fabrication quote.
                 </p>
               </div>
 

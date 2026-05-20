@@ -5,7 +5,7 @@ import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "LAMIYA AL KHALEEJ AL ITTIHAD EST. (NAEL) | General Contracting & Container Trading Saudi Arabia",
-  description: "LAMIYA AL KHALEEJ AL ITTIHAD ESTABLISHMENT FOR GENERAL CONTRACTING (NAEL) - Premier construction, container trading, sweet water delivery, sewage cleaning, scaffolding services, and heavy machinery rentals in Al Jubail, KSA. C.R. No. 7004352311 / 2050116599.",
+  description: "LAMIYA AL KHALEEJ AL ITTIHAD ESTABLISHMENT FOR GENERAL CONTRACTING (NAEL) - Premier construction, container trading, sweet water delivery, sewage cleaning, scaffolding services, and heavy machinery rentals in Al Jubail, KSA.",
   icons: {
     icon: "/naelksa/Nael Logo.webp",
     shortcut: "/naelksa/Nael Logo.webp",

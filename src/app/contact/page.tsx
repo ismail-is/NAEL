@@ -95,9 +95,7 @@ export default function ContactPage() {
               
               {/* Features Badges list */}
               <div className="flex flex-wrap gap-3 mt-4 text-[9px] uppercase tracking-wider font-semibold text-white/95">
-                <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
-                  <ShieldCheck className="w-3.5 h-3.5 text-primary-yellow" /> Dual C.R. Registered
-                </span>
+
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
                   <Clock className="w-3.5 h-3.5 text-primary-yellow" /> 24/7 Rapid Dispatch
                 </span>
@@ -163,32 +161,7 @@ export default function ContactPage() {
                   <div className="w-16 h-[3px] bg-primary-green mt-3" />
                 </div>
 
-                {/* Dual Commercial Registrations (Dual C.R. Numbers) */}
-                <div className="p-6 bg-gradient-to-r from-primary-green to-[#012422] rounded-xl border border-primary-yellow/20 text-white shadow-lg relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,204,0,0.04),transparent_60%)]" />
-                  
-                  <div className="flex items-start gap-4 relative z-10">
-                    <div className="w-10 h-10 rounded-full bg-primary-yellow/10 border border-primary-yellow/20 flex items-center justify-center text-primary-yellow shrink-0">
-                      <ShieldCheck className="w-5.5 h-5.5" />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <h3 className="font-bebas text-lg tracking-wider text-primary-yellow font-bold uppercase leading-none">
-                        COMMERCIAL REGISTRATION LICENSE
-                      </h3>
-                      <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 mt-1 text-white font-extrabold text-xs sm:text-sm tracking-wide">
-                        <span className="bg-white/10 px-3 py-1 rounded-sm border border-white/5">
-                          CORPORATE: <span className="text-primary-yellow">7004352311</span>
-                        </span>
-                        <span className="bg-white/10 px-3 py-1 rounded-sm border border-white/5">
-                          CONTRACTING: <span className="text-primary-yellow">2050116599</span>
-                        </span>
-                      </div>
-                      <p className="text-white/60 text-[10px] sm:text-xs font-light leading-relaxed mt-1">
-                        Fully licensed and compliant under all Ministry of Commerce and Investment codes within Saudi Arabia.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+
 
                 {/* Address block */}
                 <div className="flex items-start gap-4 p-5 bg-white border border-brand-black/5 hover:border-primary-green/20 hover:shadow-lg rounded-xl transition-all duration-300">
@@ -376,7 +349,11 @@ export default function ContactPage() {
                           <option value="Sweet Water Delivery">Sweet Water Delivery</option>
                           <option value="Sewage Cleaning">Sewage Cleaning Services</option>
                           <option value="Scaffolding Services">Scaffolding Services</option>
-                          <option value="Equipment Rental">Equipment and Machinery Rental</option>
+                          <option value="Equipment Rental">Heavy Equipment Rental</option>
+                          <option value="Manpower Supply">Manpower Supply</option>
+                          <option value="Fencing Solutions">Industrial Fencing Solutions</option>
+                          <option value="Steel Fabrication">Steel Fabrication</option>
+                          <option value="Porta Cabins">Porta Cabins</option>
                           <option value="General Inquiry">General Inquiry</option>
                         </select>
                       </div>

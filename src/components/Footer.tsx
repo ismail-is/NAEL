@@ -43,19 +43,7 @@ export default function Footer() {
             LAMIYA AL KHALEEJ AL ITTIHAD ESTABLISHMENT FOR GENERAL CONTRACTING is a premier industrial solutions provider in Al Jubail, Saudi Arabia, focused on general construction, sweet water delivery, container services, scaffolding, and heavy machinery leasing.
           </p>
 
-          <div className="flex flex-col gap-2">
-            <span className="text-[10px] uppercase tracking-widest text-primary-yellow font-bold">
-              Corporate Licenses
-            </span>
-            <div className="flex flex-wrap gap-2">
-              <span className="text-[10px] bg-brand-light-grey border border-white/5 px-2.5 py-1 text-white/50 rounded-sm">
-                C.R.: 7004352311
-              </span>
-              <span className="text-[10px] bg-brand-light-grey border border-white/5 px-2.5 py-1 text-white/50 rounded-sm">
-                C.R.: 2050116599
-              </span>
-            </div>
-          </div>
+
 
           <div className="flex items-center gap-3">
             <a href="#" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-primary-yellow hover:text-brand-black hover:border-primary-yellow transition-all duration-500">
@@ -96,11 +84,15 @@ export default function Footer() {
             OUR SERVICES
           </h3>
           <div className="flex flex-col gap-3 text-xs sm:text-sm font-light text-white/60">
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Container Trading</a>
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sweet Water Delivery</a>
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sewage Vacuum Suction</a>
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Scaffolding Installation</a>
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Heavy Machinery Rental</a>
+            <a href="/services/container-trading" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Container Trading</a>
+            <a href="/services/sweet-water-delivery" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sweet Water Delivery</a>
+            <a href="/services/sewage-cleaning" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sewage Cleaning</a>
+            <a href="/services/scaffolding" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Scaffolding Installation</a>
+            <a href="/services/equipment-rental" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Heavy Equipment Rental</a>
+            <a href="/services/manpower-supply" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Manpower Supply</a>
+            <a href="/services/fencing" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Fencing Solutions</a>
+            <a href="/services/steel-fabrication" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Steel Fabrication</a>
+            <a href="/services/porta-cabins" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Porta Cabins</a>
           </div>
         </div>
 
