@@ -41,7 +41,7 @@ export default function Home() {
         <Partners />
 
         {/* Testimonials Review Slider */}
-        <Testimonials />
+        {/* <Testimonials /> */}
 
         {/* Animated Banner CTA */}
         <CTA />

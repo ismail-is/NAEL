@@ -27,13 +27,9 @@ export default function Footer() {
         {/* Col 1: Corporate Branding (lg:col-span-4) */}
         <div className="lg:col-span-4 flex flex-col gap-6">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 flex items-center justify-center bg-brand-black border-2 border-primary-yellow rounded-sm">
-              <span className="font-bebas text-2xl text-primary-yellow font-extrabold">N</span>
-            </div>
+            
             <div className="flex flex-col">
-              <span className="font-bebas text-2xl tracking-wider text-white font-extrabold group-hover:text-primary-yellow transition-colors leading-none">
-                NAEL
-              </span>
+              <img src="/naelksa/Nael Logo White.webp" alt="NAEL Logo" className="w-24 h-auto object-contain group-hover:brightness-110 transition-all duration-300" />
               <span className="text-[8px] uppercase tracking-[0.25em] text-white/50 font-medium leading-none mt-1">
                 Lamiya Al Khaleej Al Ittihad Est.
               </span>
@@ -114,6 +110,10 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-primary-yellow shrink-0" />
               +966 54 713 3946
             </a>
+            <a href="mailto:mohdismail@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
+              <Mail className="w-4 h-4 text-primary-yellow shrink-0" />
+              mohdismail@naelksa.com
+            </a>
             <a href="mailto:info@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
               <Mail className="w-4 h-4 text-primary-yellow shrink-0" />
               info@naelksa.com
@@ -152,10 +152,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40 font-light relative z-10">
         <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 text-center sm:text-left">
           <span>&copy; {currentYear} Lamiya Al Khaleej Al Ittihad Est. (NAEL). All Rights Reserved.</span>
-          <span className="hidden sm:inline text-white/10">|</span>
-          <Link href="#" className="hover:text-primary-yellow transition-colors">Privacy Policy</Link>
-          <span className="hidden sm:inline text-white/10">|</span>
-          <Link href="#" className="hover:text-primary-yellow transition-colors">Terms of Service</Link>
+        
         </div>
         
       

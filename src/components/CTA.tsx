@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MessageSquare, ArrowRight, Construction, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -48,13 +49,13 @@ export default function CTA() {
 
         {/* Dual Actions CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full max-w-md justify-center">
-          <a 
-            href="#contact"
+          <Link 
+            href="/contact"
             className="px-8 py-4 bg-primary-yellow text-brand-black text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 glow-yellow hover:bg-white cursor-pointer font-semibold"
           >
             Get A Fast Quote
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
           
           <a 
             href="https://wa.me/966510969975"

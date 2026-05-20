@@ -31,10 +31,20 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate premium submit delay
+    const text = `Hello NAEL, I would like to get a quote.
+Name: ${formData.name || "Customer"}
+Phone: ${formData.phone || "N/A"}
+Email: ${formData.email || "N/A"}
+Service: ${formData.service}
+Message: ${formData.message || "N/A"}`;
+    
+    const encoded = encodeURIComponent(text);
+    
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      window.open(`https://wa.me/966510969975?text=${encoded}`, "_blank");
+      
       setFormData({
         name: "",
         phone: "",
@@ -43,7 +53,7 @@ export default function Contact() {
         message: ""
       });
       setTimeout(() => setSubmitted(false), 5000);
-    }, 1500);
+    }, 800);
   };
 
   const handleWhatsAppQuote = () => {
@@ -133,7 +143,8 @@ Message: ${formData.message || "N/A"}`;
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-white uppercase tracking-wider">Inquiries Desk</h4>
-                    <p className="text-white/60 text-xs sm:text-sm font-light mt-1">
+                    <p className="text-white/60 text-xs sm:text-sm font-light mt-1 flex flex-col gap-1">
+                      <a href="mailto:mohdismail@naelksa.com" className="hover:text-primary-yellow transition-colors">mohdismail@naelksa.com</a>
                       <a href="mailto:info@naelksa.com" className="hover:text-primary-yellow transition-colors">info@naelksa.com</a>
                     </p>
                   </div>
@@ -309,10 +320,10 @@ Message: ${formData.message || "N/A"}`;
                 </button>
               </div>
 
-              <span className="text-[10px] text-white/30 flex items-center gap-1.5 mt-2">
+              {/* <span className="text-[10px] text-white/30 flex items-center gap-1.5 mt-2">
                 <AlertCircle className="w-3.5 h-3.5 text-primary-yellow shrink-0" />
                 By submitting this form, you agree to receive follow-up contact calls or email estimates.
-              </span>
+              </span> */}
 
             </form>
           </motion.div>
