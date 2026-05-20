@@ -32,7 +32,7 @@ export default function Home() {
         <WhyChooseUs />
 
         {/* Corporate Profile (About) */}
-        <About />
+        {/* <About /> */}
 
         {/* Featured Projects Showcase */}
         <Projects />

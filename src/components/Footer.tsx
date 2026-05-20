@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { 
   Phone, 
   Mail, 
@@ -25,7 +26,7 @@ export default function Footer() {
         
         {/* Col 1: Corporate Branding (lg:col-span-4) */}
         <div className="lg:col-span-4 flex flex-col gap-6">
-          <a href="#home" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 flex items-center justify-center bg-brand-black border-2 border-primary-yellow rounded-sm">
               <span className="font-bebas text-2xl text-primary-yellow font-extrabold">N</span>
             </div>
@@ -37,7 +38,7 @@ export default function Footer() {
                 Lamiya Al Khaleej Al Ittihad Est.
               </span>
             </div>
-          </a>
+          </Link>
 
           <p className="text-white/50 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
             LAMIYA AL KHALEEJ AL ITTIHAD ESTABLISHMENT FOR GENERAL CONTRACTING is a premier industrial solutions provider in Al Jubail, Saudi Arabia, focused on general construction, sweet water delivery, container services, scaffolding, and heavy machinery leasing.
@@ -70,11 +71,10 @@ export default function Footer() {
             QUICK SITEMAP
           </h3>
           <div className="flex flex-col gap-3 text-xs sm:text-sm font-light text-white/60">
-            <a href="#home" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Home</a>
-            <a href="#about" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> About Us</a>
-            <a href="#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Services</a>
-            <a href="#testimonials" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Testimonials</a>
-            <a href="#contact" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Contact Us</a>
+            <Link href="/" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Home</Link>
+            <Link href="/about" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> About Us</Link>
+            <Link href="/#services" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Services</Link>
+            <Link href="/contact" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Contact Us</Link>
           </div>
         </div>
 
@@ -84,15 +84,15 @@ export default function Footer() {
             OUR SERVICES
           </h3>
           <div className="flex flex-col gap-3 text-xs sm:text-sm font-light text-white/60">
-            <a href="/services/container-trading" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Container Trading</a>
-            <a href="/services/sweet-water-delivery" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sweet Water Delivery</a>
-            <a href="/services/sewage-cleaning" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sewage Cleaning</a>
-            <a href="/services/scaffolding" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Scaffolding Installation</a>
-            <a href="/services/equipment-rental" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Heavy Equipment Rental</a>
-            <a href="/services/manpower-supply" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Manpower Supply</a>
-            <a href="/services/fencing" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Fencing Solutions</a>
-            <a href="/services/steel-fabrication" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Steel Fabrication</a>
-            <a href="/services/porta-cabins" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Porta Cabins</a>
+            <Link href="/services/container-trading" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Container Trading</Link>
+            <Link href="/services/sweet-water-delivery" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sweet Water Delivery</Link>
+            <Link href="/services/sewage-cleaning" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sewage Cleaning</Link>
+            <Link href="/services/scaffolding" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Scaffolding Installation</Link>
+            <Link href="/services/equipment-rental" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Heavy Equipment Rental</Link>
+            <Link href="/services/manpower-supply" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Manpower Supply</Link>
+            <Link href="/services/fencing" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Fencing Solutions</Link>
+            <Link href="/services/steel-fabrication" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Steel Fabrication</Link>
+            <Link href="/services/porta-cabins" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Porta Cabins</Link>
           </div>
         </div>
 
@@ -153,9 +153,9 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 text-center sm:text-left">
           <span>&copy; {currentYear} Lamiya Al Khaleej Al Ittihad Est. (NAEL). All Rights Reserved.</span>
           <span className="hidden sm:inline text-white/10">|</span>
-          <a href="#" className="hover:text-primary-yellow transition-colors">Privacy Policy</a>
+          <Link href="#" className="hover:text-primary-yellow transition-colors">Privacy Policy</Link>
           <span className="hidden sm:inline text-white/10">|</span>
-          <a href="#" className="hover:text-primary-yellow transition-colors">Terms of Service</a>
+          <Link href="#" className="hover:text-primary-yellow transition-colors">Terms of Service</Link>
         </div>
         
       
