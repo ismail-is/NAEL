@@ -106,9 +106,9 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-primary-yellow shrink-0" />
               +966 51 096 9975
             </a>
-            <a href="tel:+966547133946" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
+            <a href="tel:+966566539773" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
               <Phone className="w-4 h-4 text-primary-yellow shrink-0" />
-              +966 54 713 3946
+              +966 56 653 9773
             </a>
             <a href="mailto:mohdismail@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
               <Mail className="w-4 h-4 text-primary-yellow shrink-0" />
