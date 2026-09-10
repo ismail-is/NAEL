@@ -132,7 +132,7 @@ Message: ${formData.message || "N/A"}`;
                     <h4 className="text-sm font-bold text-white uppercase tracking-wider">Hotline Support</h4>
                     <p className="text-white/60 text-xs sm:text-sm font-light mt-1 flex flex-col">
                       <a href="tel:+966510969975" className="hover:text-primary-yellow transition-colors">+966 51 096 9975</a>
-                      <a href="tel:+966547133946" className="hover:text-primary-yellow transition-colors mt-0.5">+966 54 713 3946</a>
+                      <a href="tel:+966566539773" className="hover:text-primary-yellow transition-colors mt-0.5">+966 56 653 9773</a>
                     </p>
                   </div>
                 </div>
