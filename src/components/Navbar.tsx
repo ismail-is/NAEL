@@ -103,9 +103,9 @@ export default function Navbar() {
               <Phone className="w-3.5 h-3.5 text-primary-yellow shrink-0" />
               +966 51 096 9975
             </a>
-            <a href="tel:+966547133946" className="hidden md:flex items-center gap-1.5 hover:text-primary-yellow transition-colors">
+            <a href="tel:+966566539773" className="hidden md:flex items-center gap-1.5 hover:text-primary-yellow transition-colors">
               <Phone className="w-3.5 h-3.5 text-primary-yellow shrink-0" />
-              +966 54 713 3946
+               +966 56 653 9773
             </a>
           </div>
 
