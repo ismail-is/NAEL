@@ -203,14 +203,14 @@ export default function ContactPage() {
                         </span>
                       </a>
                       <a 
-                        href="tel:+966547133946"
+                        href="tel:+966566539773"
                         className="flex flex-col hover:opacity-85 transition-opacity"
                       >
                         <span className="text-[10px] text-brand-black/60 font-semibold uppercase leading-tight">
                           Project Operations
                         </span>
                         <span className="font-bebas text-lg font-bold text-primary-green tracking-wider">
-                          +966 54 713 3946
+                         +966 56 653 9773
                         </span>
                       </a>
                     </div>
