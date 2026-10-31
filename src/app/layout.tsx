@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title: "LAMIYA AL KHALEEJ AL ITTIHAD EST. (NAEL) | General Contracting",
-    description: "Premium modern general contracting and container trading services in Al Jubail, Saudi Arabia.",
+    description: "Premium modern general contracting, interior fit-out, civil works, and container trading services in Al Jubail, Saudi Arabia.",
     url: "https://www.naelksa.com",
     siteName: "NAEL",
     locale: "en_US",
