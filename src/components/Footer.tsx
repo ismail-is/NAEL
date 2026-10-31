@@ -80,6 +80,7 @@ export default function Footer() {
             OUR SERVICES
           </h3>
           <div className="flex flex-col gap-3 text-xs sm:text-sm font-light text-white/60">
+            <Link href="/services/transportation-equipment-rental" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Coaster, Bus & Transportation Rental</Link>
             <Link href="/services/container-trading" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Container Trading</Link>
             <Link href="/services/sweet-water-delivery" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sweet Water Delivery</Link>
             <Link href="/services/sewage-cleaning" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Sewage Cleaning</Link>
