@@ -90,7 +90,7 @@ export default function Footer() {
             <Link href="/services/fencing" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Fencing Solutions</Link>
             <Link href="/services/steel-fabrication" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Steel Fabrication</Link>
             <Link href="/services/porta-cabins" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Porta Cabins</Link>
-            <Link href="/services/transportation-equipment-rental" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Transportation Rental</Link>
+            <Link href="/services/interior-fit-out" className="hover:text-primary-yellow transition-colors flex items-center gap-1"><ChevronRight className="w-3.5 h-3.5" /> Interior Fit-Out Services</Link>
           </div>
         </div>
 

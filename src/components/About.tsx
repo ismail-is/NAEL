@@ -104,7 +104,7 @@ export default function About() {
               </p>
               
               <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
-                We provide comprehensive contracting, trading, cleaning, scaffolding and equipment rental services with a commitment to safety, quality and client satisfaction.
+                We provide comprehensive Interior fit-out, Civil works, contracting, trading, cleaning, scaffolding and equipment rental services with a commitment to safety, quality and client satisfaction.
               </p>
 
               <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">

@@ -24,16 +24,19 @@ const navLinks = [
 ];
 
 const serviceDropdownItems = [
+   { name: "Interior Fit-Out Services", href: "/services/interior-fit-out" },
+    { name: "Manpower Supply", href: "/services/manpower-supply" },
   { name: "Coaster, Bus & Transportation Rental", href: "/services/transportation-equipment-rental" },
   { name: "Specialized in Container Trading", href: "/services/container-trading" },
   { name: "Sweet Water Delivery", href: "/services/sweet-water-delivery" },
   { name: "Sewage Cleaning Services", href: "/services/sewage-cleaning" },
   { name: "Scaffolding Services", href: "/services/scaffolding" },
   { name: "Equipment & Machinery Rental", href: "/services/equipment-rental" },
-  { name: "Manpower Supply", href: "/services/manpower-supply" },
+ 
   { name: "Fencing Services", href: "/services/fencing" },
   { name: "Steel Fabrication", href: "/services/steel-fabrication" },
   { name: "Porta Cabins", href: "/services/porta-cabins" },
+ 
 ];
 
 export default function Navbar() {
