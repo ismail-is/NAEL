@@ -64,7 +64,7 @@ export default function TransportationEquipmentRentalPage() {
       title: "Water Tankers",
       desc: "Stainless and carbon steel water tankers for dust suppression, site water supply, irrigation, and construction water delivery requirements across project sites.",
       // Local sweet water tanker image
-      image: "/naelksa/sweet_water_tanker.jpg",
+      image: "/naelksa/Services/Sweet.webp",
       tag: "Water Supply"
     },
     {

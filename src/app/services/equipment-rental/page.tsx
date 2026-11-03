@@ -33,31 +33,31 @@ export default function EquipmentRentalPage() {
     {
       title: "Crawler Excavators",
       desc: "Heavy crawler excavators ranging from 20 to 50 tons, optimized for bulk earthmoving, deep trenching, rock breaking, and foundation works.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/27.jpeg",
       tag: "Excavators"
     },
     {
       title: "Mobile & Crawler Cranes",
       desc: "All-terrain hydraulic mobile cranes and crawler cranes with lift capacities from 50 to 500 tons, managed by TUV-certified riggers and operators.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/28.jpeg",
       tag: "Heavy Lifting"
     },
     {
       title: "Wheel Loaders",
       desc: "High-capacity wheel loaders with heavy-duty buckets. Ideal for bulk aggregate handling, site clearing, concrete batching support, and stockpile loading.",
-      image: "/naelksa/wheel_loaders.png",
+      image: "/naelksa/img/29.jpeg",
       tag: "Earthmoving"
     },
     {
       title: "Heavy-Duty Bulldozers",
       desc: "High-traction track bulldozers equipped with semi-U blades and multi-shank rippers, engineered for civil earthmoving, leveling, and site grading.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/30.jpeg",
       tag: "Land Grading"
     },
     {
       title: "Haulage & Dump Trucks",
       desc: "Heavy-duty tri-axle dump trucks and flatbed transport trailers for high-volume rock, soil, aggregate, and cargo movement across KSA.",
-      image: "/naelksa/haulage_dump_trucks.png",
+      image: "/naelksa/img/31.jpeg",
       tag: "Material Haulage"
     },
     {
@@ -69,13 +69,13 @@ export default function EquipmentRentalPage() {
     {
       title: "Mobile Diesel Generators",
       desc: "Soundproof diesel generator units ranging from 50kVA to 1000kVA, supplying reliable temporary prime power to remote project sites.",
-      image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/32.jpeg",
       tag: "Power Systems"
     },
     {
       title: "Vibratory Soil Compactors",
       desc: "Single-drum and double-drum vibratory road rollers, designed to achieve maximum density in soil, sub-base, and asphalt paving works.",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/33.jpeg",
       tag: "Soil Compaction"
     }
   ];
@@ -94,7 +94,7 @@ export default function EquipmentRentalPage() {
           {/* Background twilight fresh water liquid */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/26.jpeg"
               alt="Heavy Duty Machinery"
               className="w-full h-full object-cover"
             />

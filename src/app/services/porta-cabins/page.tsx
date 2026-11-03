@@ -28,37 +28,37 @@ export default function PortaCabinsPage() {
     {
       title: "Mobile Site Offices",
       desc: "Fully insulated, air-conditioned executive and engineering offices equipped with network cabling, designed for harsh desert climates.",
-      image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/47.jpeg",
       tag: "Site Offices"
     },
     {
       title: "Labor Accommodation Camps",
       desc: "Multi-unit modular camps with robust structural steel framing, tailored to house massive workforces safely and comfortably.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/48.jpeg",
       tag: "Labor Camps"
     },
     {
       title: "Security & Guard Cabins",
       desc: "Compact, highly durable guard houses offering 360-degree visibility, impact resistance, and climate control for perimeter security.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/49.jpeg",
       tag: "Security Hubs"
     },
     {
       title: "Ablution & Sanitary Units",
       desc: "Portable washrooms and shower blocks, fully plumbed with anti-slip flooring and corrosion-resistant fixtures.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/50.jpeg",
       tag: "Sanitary Blocks"
     },
     {
       title: "Modified Storage Containers",
       desc: "Heavy-duty steel shipping containers modified for secure on-site storage of expensive tools, machinery, and raw materials.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/51.jpeg",
       tag: "Secure Storage"
     },
     {
       title: "Custom Modular Facilities",
       desc: "Bespoke fabrication of modular mosques, mess halls, first-aid clinics, and multi-story complex structures for mega-projects.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/52.jpeg",
       tag: "Custom Modular"
     }
   ];
@@ -77,9 +77,9 @@ export default function PortaCabinsPage() {
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/46.jpeg"
               alt="Prefabricated Porta Cabins"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-center object-cover"
             />
             <div className="absolute inset-0 bg-brand-black/75 z-10" />
           </div>

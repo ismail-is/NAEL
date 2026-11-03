@@ -28,37 +28,37 @@ export default function IndustrialFencingPage() {
     {
       title: "Security Chain-Link Fences",
       desc: "HCIS-compliant, heavily galvanized and PVC-coated chain-link fences designed to withstand corrosive industrial environments and unauthorized access.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/35.jpeg",
       tag: "Chain-Link"
     },
     {
       title: "Anti-Climb 358 Mesh",
       desc: "Rigid, tightly welded wire mesh panels that prevent climbing and cutting. Ideal for protecting power sub-stations, refineries, and critical infrastructure.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/36.jpeg",
       tag: "High Security Mesh"
     },
     {
       title: "Razor & Barbed Wire",
       desc: "Deterrent concertina razor wire and high-tensile barbed wire toppings installed on perimeter walls and fences for maximum intrusion protection.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/37.jpeg",
       tag: "Intrusion Deterrent"
     },
     {
       title: "Heavy-Duty Automated Gates",
       desc: "Custom fabricated sliding gates, cantilever gates, and crash-rated barriers integrated with advanced access control systems.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/38.jpeg",
       tag: "Access Gates"
     },
     {
       title: "Temporary Construction Fencing",
       desc: "Portable, highly visible steel hoarding and barricades for temporary worksites, ensuring public safety and site boundary control.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/39.jpeg",
       tag: "Site Hoarding"
     },
     {
       title: "Perimeter Protection Upgrades",
       desc: "Structural reinforcement of existing fences, rust-proofing treatments, and integration of perimeter intrusion detection systems (PIDS).",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/40.jpeg",
       tag: "System Upgrades"
     }
   ];
@@ -77,9 +77,9 @@ export default function IndustrialFencingPage() {
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/34.jpeg"
               alt="Industrial Security Fencing"
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
             <div className="absolute inset-0 bg-brand-black/75 z-10" />
           </div>

@@ -33,51 +33,29 @@ export default function SewageCleaningPage() {
     {
       title: "Advanced Drain Cleaning",
       desc: "Comprehensive high-pressure hydrodynamic flushings that scour the internal walls of drainage networks, preventing scale buildup and recurring backups.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/16.jpeg",
       tag: "Hydro Jetting"
     },
     {
       title: "High-Pressure Drain Unblocking",
       desc: "Rapid emergency mechanical and pneumatic clearance of completely choked municipal and commercial drains, restoring full flow capacity.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/17.jpeg",
       tag: "Emergency Clearing"
     },
     {
       title: "Inspection Chamber Unclogging",
       desc: "Thorough cleanup and mechanical unclogging of structural inspection chambers and manholes, preventing lateral sewer line flooding.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/18.jpeg",
       tag: "Chamber Cleanup"
     },
-    {
-      title: "Facility & Interior Unclogging",
-      desc: "Hygienic and residue-free unclogging of high-use commercial kitchen grease lines and industrial bathroom drainage networks.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
-      tag: "Facility Sanitation"
-    },
+   
     {
       title: "Septic Tank Pumping & Suction",
       desc: "Complete high-volume suction pumping and sludge extraction of residential and labor camp septic systems with chemical deodorization.",
-      image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/19.jpeg",
       tag: "Septic Services"
     },
-    {
-      title: "Municipal Sewer Cleaning",
-      desc: "Heavy-duty descaling and scouring of large-bore municipal sewer mainlines to maintain fluid velocities and prevent sediment accumulation.",
-      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop",
-      tag: "Municipal Mains"
-    },
-    {
-      title: "Sewer Pipe Restoration",
-      desc: "Precision root-cutting, structural descaling, and high-impact pneumatic unclogging of buried lateral clay and PVC sewer pipelines.",
-      image: "/naelksa/sewer_restoration.png",
-      tag: "Pipe Clearing"
-    },
-    {
-      title: "Pneumatic Suction Compressors",
-      desc: "Access our state-of-the-art vacuum compressor fleet, delivering extreme negative pressure suction to pull heavy sludge, sediment, and thick mud.",
-      image: "/naelksa/pneumatic_suction.png",
-      tag: "Compressor Fleet"
-    }
+    
   ];
 
   return (

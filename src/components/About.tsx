@@ -131,7 +131,7 @@ export default function About() {
               {/* Rounded Card frame */}
               <div className="relative w-full h-[360px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-brand-black/5 group">
                 <img
-                  src="/naelksa/about_excellence.png"
+                  src="/naelksa/img/53.jpeg"
                   alt="Construction Site Sunset"
                   className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-[4000ms]"
                   loading="lazy"
@@ -139,7 +139,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-brand-black/25 z-10" />
 
                 {/* Central Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center z-20">
+                {/* <div className="absolute inset-0 flex items-center justify-center z-20">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -149,7 +149,7 @@ export default function About() {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </motion.div>
-                </div>
+                </div> */}
 
                 {/* Overlaid Stats Ribbon at bottom */}
                 <div className="absolute bottom-0 left-0 w-full z-20 bg-primary-green/95 backdrop-blur-md py-5 px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-primary-yellow/20 select-none">

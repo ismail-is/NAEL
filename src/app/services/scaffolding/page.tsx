@@ -32,37 +32,37 @@ export default function ScaffoldingPage() {
     {
       title: "Cup-Lock Scaffolding Systems",
       desc: "Versatile, high-strength multi-directional scaffolding systems, featuring locking cups for rapid erection and massive structural load capabilities.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/22.jpeg",
       tag: "Cup-Lock System"
     },
     {
       title: "Ring-Lock Modular Scaffolding",
       desc: "Highly stable rosette modular scaffolding that adapts seamlessly to complex geometries, curved storage tanks, and offshore platforms.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/23.jpeg",
       tag: "Ring-Lock Modular"
     },
     {
       title: "Tube & Clamp Access Scaffolds",
       desc: "Traditional, fully adaptable high-flexibility scaffolding. Ideal for congested industrial refinery bypass structures and hard-to-reach pipe racks.",
-      image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/20.jpeg",
       tag: "Tube & Clamp"
     },
     {
       title: "Heavy-Duty Support & Shoring",
       desc: "Engineered concrete support structures capable of supporting thick concrete slabs, heavy structural beams, and large bridge girders.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/21.jpeg",
       tag: "Heavy Shoring"
     },
     {
       title: "Scaffold Equipment Leasing",
       desc: "Wide inventory of premium steel pipes, walkway boards, ladders, clamps, screw jacks, and beams available for long-term and short-term rentals.",
-      image: "https://images.unsplash.com/photo-1590486803833-ffc6f68e82f2?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/24.jpeg",
       tag: "Material Rental"
     },
     {
       title: "Safety Erection & Audits",
       desc: "Professional certified erection, dismantling, and third-party safety audits issuing official red, yellow, and green safety tags.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/25.jpeg",
       tag: "Safety Tagging"
     }
   ];

@@ -32,21 +32,21 @@ export default function SweetWaterPage() {
       id: 1,
       title: "Batching Plant Operations",
       desc: "Highly consistent and clean sweet water supply for concrete batching plants, guaranteeing correct mixing properties and standard structural curing.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/12.jpeg",
       tag: "Concrete Works"
     },
     {
       id: 2,
       title: "Potable Drinking Reserves",
       desc: "Fully certified potable water resources delivered to temporary labor camps, administrative blocks, and commercial residential tanks.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image:"/naelksa/img/13.jpeg",
       tag: "Potable Reserves"
     },
     {
       id: 3,
       title: "Civil Site Work Supply",
       desc: "Bulk water tankers supporting high-volume civil tasks, including deep soil compaction, site clearing, and active dust control sprays for environment safety.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/Services/Sweet.webp",
       tag: "Civil Works"
     },
     {
@@ -60,7 +60,7 @@ export default function SweetWaterPage() {
       id: 5,
       title: "Multi-Size Tanker Fleet",
       desc: "Choose from our dynamic capacity sizes: 10,000L, 19,000L, and 32,000L tankers, matching the specific spatial and volume constraints of your sites.",
-      image: "/naelksa/sweet_water_tanker.jpg",
+      image: "/naelksa/img/14.jpeg",
       tag: "Mercedes Tanker",
       customCrop: true // Will apply bottom watermark crop CSS cleanly
     },
@@ -87,7 +87,7 @@ export default function SweetWaterPage() {
           {/* Background twilight fresh water liquid */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/15.jpeg"
               alt="Hygienic Water Resource"
               className="w-full h-full object-cover"
             />

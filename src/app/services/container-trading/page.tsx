@@ -36,7 +36,7 @@ export default function ContainerTradingPage() {
     {
       title: "Refrigerated Reefers",
       desc: "State-of-the-art temperature-controlled reefer units featuring advanced cold-chain automation. Crucial for the safe, reliable, and uniform transport of agricultural and pharmaceutical items.",
-      image: "/naelksa/refrigerated_reefer.png",
+      image: "/naelksa/img/11.jpeg",
       tag: "Cold Chain Logistics"
     },
     {
@@ -48,19 +48,19 @@ export default function ContainerTradingPage() {
     {
       title: "Modular Toilet Containers",
       desc: "Portable, sanitizable, and fully plumbed restroom containers equipped with premium fittings. Purpose-built to support field team hygiene on active construction sites and events.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/7.jpeg",
       tag: "On-Site Sanitary"
     },
     {
       title: "Container Purchasing & Sales",
       desc: "Purchase certified new and pre-owned shipping cargo units in standard 20ft and 40ft dimensions. Complete with authentic CSC certificate compliance and instant ownership clearances.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/8.jpeg",
       tag: "Buy Container"
     },
     {
       title: "Flexible Container Leasing",
       desc: "Cost-effective leasing contracts tailored for temporary storage, logistics overflows, and on-site tool shelters. Benefit from flexible rental terms and quick site delivery options.",
-      image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/9.jpeg",
       tag: "Leasing & Rentals"
     },
     {
@@ -72,7 +72,7 @@ export default function ContainerTradingPage() {
     {
       title: "Maintenance & Repairs",
       desc: "Certified welding, structural panel patches, lock rod replacements, and gasket seals. Restores weathered or dented containers to original high-integrity cargo-worthy standards.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/10.jpeg",
       tag: "Repair Services"
     }
   ];

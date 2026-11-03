@@ -27,7 +27,7 @@ export default function SteelFabricationPage() {
     {
       title: "Structural Steel Fabrication",
       desc: "Heavy-duty steel beams, columns, and roof trusses fabricated to exact engineering specifications for large-scale industrial complexes.",
-      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/41.jpeg",
       tag: "Structural Steel"
     },
     {
@@ -39,25 +39,25 @@ export default function SteelFabricationPage() {
     {
       title: "Storage Tanks & Vessels",
       desc: "Custom-engineered carbon steel and stainless steel storage tanks designed for bulk liquid storage and chemical containment.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/42.jpeg",
       tag: "Tank Fabrication"
     },
     {
       title: "Access Platforms & Gratings",
       desc: "Galvanized catwalks, multi-level stairways, handrails, and industrial grating systems designed for safe plant access and maintenance.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/43.jpeg",
       tag: "Access Structures"
     },
     {
       title: "CNC Plasma & Laser Cutting",
       desc: "Computer-controlled precision cutting and drilling of thick steel plates, ensuring absolute dimensional accuracy and smooth finishes.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/44.jpeg",
       tag: "Precision Cutting"
     },
     {
       title: "On-Site Welding & Erection",
       desc: "Certified TIG/MIG welding technicians deployed directly to your project site for seamless structural assembly and heavy equipment integration.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/45.jpeg",
       tag: "Site Welding"
     }
   ];

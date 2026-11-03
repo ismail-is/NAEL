@@ -28,7 +28,7 @@ export default function InteriorFitOutPage() {
     {
       title: "Corporate Office Fit-Out",
       desc: "Turnkey workspace transformations featuring ergonomic layouts, executive boardrooms, collaborative zones, and turnkey modern interior environments.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/54.jpeg",
       tag: "Corporate Spaces"
     },
     {

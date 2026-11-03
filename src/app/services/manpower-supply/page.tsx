@@ -35,7 +35,7 @@ export default function ManpowerSupplyPage() {
     {
       title: "Certified Heavy Operators",
       desc: "Licensed and Aramco-certified operators for cranes, excavators, bulldozers, and forklifts ensuring absolute site safety.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/1.jpeg",
       tag: "Heavy Machinery"
     },
     {
@@ -47,13 +47,13 @@ export default function ManpowerSupplyPage() {
     {
       title: "Safety & HSE Personnel",
       desc: "Dedicated HSE Managers, Safety Officers, and Fire Watches to maintain strict compliance with SABIC and Saudi Aramco standards.",
-      image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/2.jpeg",
       tag: "Safety Officers"
     },
     {
       title: "Scaffolding & Rigging Crews",
       desc: "TUV certified Riggers (Level I, II, III) and expert scaffolders to handle critical lifting and structural access operations.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/3.jpeg",
       tag: "Rigging & Access"
     },
     {
@@ -78,7 +78,7 @@ export default function ManpowerSupplyPage() {
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/4.jpeg"
               alt="Industrial Manpower Supply"
               className="w-full h-full object-cover"
             />
