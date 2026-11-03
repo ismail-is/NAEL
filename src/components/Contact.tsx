@@ -144,7 +144,7 @@ Message: ${formData.message || "N/A"}`;
                   <div>
                     <h4 className="text-sm  text-white uppercase tracking-wider">Inquiries Desk</h4>
                     <p className="text-white/60 text-xs sm:text-sm font-light mt-1 flex flex-col gap-1">
-                      <a href="mailto:mohdismail@naelksa.com" className="hover:text-primary-yellow transition-colors">mohdismail@naelksa.com</a>
+                      <a href="mailto:ismail@naelksa.com" className="hover:text-primary-yellow transition-colors">ismail@naelksa.com</a>
                       <a href="mailto:info@naelksa.com" className="hover:text-primary-yellow transition-colors">info@naelksa.com</a>
                     </p>
                   </div>

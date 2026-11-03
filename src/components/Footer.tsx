@@ -112,9 +112,9 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-primary-yellow shrink-0" />
               +966 56 653 9773
             </a>
-            <a href="mailto:mohdismail@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
+            <a href="mailto:ismail@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
               <Mail className="w-4 h-4 text-primary-yellow shrink-0" />
-              mohdismail@naelksa.com
+              ismail@naelksa.com
             </a>
             <a href="mailto:info@naelksa.com" className="flex items-center gap-2 hover:text-primary-yellow transition-colors">
               <Mail className="w-4 h-4 text-primary-yellow shrink-0" />

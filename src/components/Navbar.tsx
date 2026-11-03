@@ -114,9 +114,9 @@ export default function Navbar() {
 
           {/* Right Timings & Socials Section */}
           <div className="flex items-center gap-5 sm:gap-6 font-light">
-            <a href="mailto:mohdismail@naelksa.com" className="hidden md:flex items-center gap-1.5 hover:text-primary-yellow transition-colors">
+            <a href="mailto:ismail@naelksa.com" className="hidden md:flex items-center gap-1.5 hover:text-primary-yellow transition-colors">
               <Mail className="w-3.5 h-3.5 text-primary-yellow shrink-0" />
-              mohdismail@naelksa.com
+              ismail@naelksa.com
             </a>
             <a href="mailto:info@naelksa.com" className="hidden md:flex items-center gap-1.5 hover:text-primary-yellow transition-colors">
               <Mail className="w-3.5 h-3.5 text-primary-yellow shrink-0" />
@@ -363,9 +363,9 @@ export default function Navbar() {
                   <MapPin className="w-4 h-4 text-primary-yellow" />
                   Al Jubail, Al Safat Dist. Makkah Al mukarama St.
                 </span>
-                <a href="mailto:mohdismail@naelksa.com" className="flex items-center gap-2">
+                <a href="mailto:ismail@naelksa.com" className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary-yellow" />
-                  mohdismail@naelksa.com
+                 ismail@naelksa.com
                 </a>
                 <a href="mailto:info@naelksa.com" className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary-yellow" />
