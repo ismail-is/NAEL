@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  ShieldCheck, 
-  Users, 
-  Cpu, 
-  Zap, 
-  Clock, 
-  Smile, 
+import {
+  ShieldCheck,
+  Users,
+  Cpu,
+  Zap,
+  Clock,
+  Smile,
   Award,
   ChevronRight
 } from "lucide-react";
@@ -59,7 +59,7 @@ const featureList = [
 
 export default function WhyChooseUs() {
   return (
-    <section 
+    <section
       id="why-choose-us"
       className="relative bg-gradient-to-b from-[#012a27] to-brand-black py-24 px-4 sm:px-8 overflow-hidden"
     >
@@ -71,13 +71,13 @@ export default function WhyChooseUs() {
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 rounded-full bg-primary-yellow/15 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Header Block */}
         <div className="text-center flex flex-col items-center gap-3 mb-16">
-          <span className="text-xs uppercase tracking-[0.4em] text-primary-yellow font-bold">
+          <span className="text-xs uppercase tracking-[0.4em] text-primary-yellow ">
             WHY NAEL ESTABLISHMENT
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bebas font-extrabold text-white tracking-wider leading-none">
+          <h2 className="text-4xl sm:text-5xl font-bebas  text-white tracking-wider leading-none">
             WHY CHOOSE <span className="text-primary-yellow">NAEL?</span>
           </h2>
           <div className="w-20 h-[3px] bg-primary-yellow mt-1" />
@@ -88,15 +88,13 @@ export default function WhyChooseUs() {
 
         {/* 6-Column Grid Layout matching the NAEL reference image */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-0 border-y border-white/10 bg-brand-black/40 backdrop-blur-sm rounded-sm">
-          
+
           {featureList.map((item, index) => (
             <motion.div
               key={item.id}
-              className={`p-6 flex flex-col items-center text-center group transition-all duration-500 hover:bg-[#02534D]/25 relative ${
-                index !== 5 ? "lg:border-r lg:border-white/10" : ""
-              } ${
-                index % 2 === 0 ? "border-r border-white/5 sm:border-r-0 lg:border-r" : ""
-              } border-b border-white/10 sm:border-b-0`}
+              className={`p-6 flex flex-col items-center text-center group transition-all duration-500 hover:bg-[#02534D]/25 relative ${index !== 5 ? "lg:border-r lg:border-white/10" : ""
+                } ${index % 2 === 0 ? "border-r border-white/5 sm:border-r-0 lg:border-r" : ""
+                } border-b border-white/10 sm:border-b-0`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -111,7 +109,7 @@ export default function WhyChooseUs() {
               </div>
 
               {/* Title & Underline */}
-              <h3 className="text-lg font-bebas font-extrabold text-white tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
+              <h3 className="text-lg font-bebas  text-white tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
                 {item.title}
               </h3>
               <div className="w-6 h-[1.5px] bg-white/20 group-hover:w-12 group-hover:bg-primary-yellow transition-all duration-500 mb-3" />
@@ -137,13 +135,13 @@ export default function WhyChooseUs() {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-lg font-bebas font-extrabold text-white tracking-wider">Aramco & SABIC Standard Compliant</h4>
+              <h4 className="text-lg font-bebas  text-white tracking-wider">Aramco & SABIC Standard Compliant</h4>
               <p className="text-white/50 text-[10px] sm:text-xs font-light">All personnel and logistics operate under the highest Saudi industrial safety metrics.</p>
             </div>
           </div>
-          <a 
+          <a
             href="#contact"
-            className="px-6 py-2.5 bg-primary-yellow text-brand-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 rounded-sm flex items-center gap-1.5 cursor-pointer font-semibold"
+            className="px-6 py-2.5 bg-primary-yellow text-brand-black text-xs  uppercase tracking-widest hover:bg-white transition-all duration-300 rounded-sm flex items-center gap-1.5 cursor-pointer font-semibold"
           >
             Review Safety Standards
             <ChevronRight className="w-4 h-4" />

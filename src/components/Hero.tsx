@@ -62,23 +62,23 @@ export default function Hero() {
   const opacityContent = useTransform(scrollY, [0, 600], [1, 0]);
 
   return (
-    <section 
+    <section
       id="home"
       ref={containerRef}
       className="relative min-h-screen bg-brand-black overflow-hidden flex flex-col justify-center pt-24 pb-12"
     >
       {/* 1. Industrial Grid Background */}
       <div className="absolute inset-0 industrial-grid opacity-15 pointer-events-none z-0" />
-      
+
       {/* 2. Mouse-Follow Light Beam (Radial Glow) */}
-      <div 
+      <div
         className="absolute w-[600px] h-[600px] rounded-full bg-primary-green/10 blur-[120px] pointer-events-none z-0 transition-opacity duration-500 hidden md:block"
         style={{
           left: mousePosition.x - 300,
           top: mousePosition.y - 300,
         }}
       />
-      
+
       {/* 3. Floating Amber/Yellow Dust Particles */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         {[...Array(10)].map((_, i) => (
@@ -105,12 +105,12 @@ export default function Hero() {
 
       {/* 4. Main Hero Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 flex flex-col justify-between flex-grow">
-        
+
         {/* Top Grid Split Layout (6 and 6 Split for perfect slanted look) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center my-auto pt-4">
-          
+
           {/* Left Text Column (Col 6) */}
-          <motion.div 
+          <motion.div
             style={{ y: yContent, opacity: opacityContent }}
             className="lg:col-span-6 flex flex-col gap-5"
             initial={{ opacity: 0, x: -50 }}
@@ -120,15 +120,15 @@ export default function Hero() {
             {/* Tagline */}
             <div className="flex items-center gap-1.5">
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-white/60 font-medium">
-                Building Trust, 
+                Building Trust,
               </span>
-              <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow ">
                 Delivering Excellence.
               </span>
             </div>
 
             {/* Core Titles matching uploaded layout */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bebas font-extrabold tracking-wide text-white leading-[0.95] flex flex-col">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bebas  tracking-wide text-white leading-[0.95] flex flex-col">
               <span>LAMIYA AL KHALEEJ AL ITTIHAD</span>
               <span>ESTABLISHMENT FOR</span>
               <span className="text-primary-yellow text-glow-yellow mt-1">
@@ -139,16 +139,16 @@ export default function Hero() {
 
             {/* Explore Buttons */}
             <div className="flex flex-wrap gap-4 mt-2">
-              <a 
+              <a
                 href="#services"
-                className="px-8 py-3 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm glow-green transition-all duration-300 flex items-center gap-2 cursor-pointer border border-primary-green"
+                className="px-8 py-3 bg-primary-green hover:bg-brand-light-green text-white text-xs  uppercase tracking-widest rounded-sm glow-green transition-all duration-300 flex items-center gap-2 cursor-pointer border border-primary-green"
               >
                 Explore Services
                 <ArrowRight className="w-4 h-4 text-primary-yellow" />
               </a>
-              <a 
+              <a
                 href="#contact"
-                className="px-8 py-3 bg-transparent border border-white/20 hover:border-primary-yellow hover:bg-primary-yellow/5 text-white hover:text-primary-yellow text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center gap-2 cursor-pointer"
+                className="px-8 py-3 bg-transparent border border-white/20 hover:border-primary-yellow hover:bg-primary-yellow/5 text-white hover:text-primary-yellow text-xs  uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center gap-2 cursor-pointer"
               >
                 Contact Us
               </a>
@@ -156,7 +156,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Right Parallax Diagonal Image Slider Column (Col 6) */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-6 relative w-full h-[360px] sm:h-[450px] lg:h-[530px] flex items-center justify-center rounded-sm lg:overflow-visible overflow-hidden"
             initial={{ opacity: 0, scale: 0.95, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -182,16 +182,16 @@ export default function Hero() {
                   className="absolute inset-0 w-full h-full"
                 >
                   {/* Subtle Parallax Slide Move */}
-                  <motion.div 
-                    style={{ y: yBg }} 
+                  <motion.div
+                    style={{ y: yBg }}
                     className="absolute inset-0 w-full h-[120%] -top-[10%]"
                   >
                     {/* Layered dark filters for absolute text contrast */}
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-brand-black/40 z-10" />
                     <div className="absolute inset-0 bg-gradient-to-r from-brand-black via-transparent to-transparent z-10" />
-                    
-                    <img 
-                      src={heroSlides[activeSlide].image} 
+
+                    <img
+                      src={heroSlides[activeSlide].image}
                       alt={heroSlides[activeSlide].title}
                       className="w-full h-full object-cover"
                       loading="eager"
@@ -203,7 +203,7 @@ export default function Hero() {
 
             {/* Creative Glass Caption Overlay */}
             <div className="absolute bottom-6 left-6 right-6 z-20 glass-panel p-4 border-l-4 border-primary-yellow rounded-sm shadow-2xl">
-              <span className="text-[10px] uppercase tracking-widest text-primary-yellow font-extrabold block">
+              <span className="text-[10px] uppercase tracking-widest text-primary-yellow  block">
                 {heroSlides[activeSlide].title}
               </span>
               <p className="text-[10px] text-white/70 leading-relaxed font-light mt-1.5">
@@ -217,11 +217,10 @@ export default function Hero() {
                 <button
                   key={idx}
                   onClick={() => setActiveSlide(idx)}
-                  className={`w-2.5 h-1.5 rounded-full transition-all duration-300 focus:outline-none cursor-pointer ${
-                    activeSlide === idx 
-                      ? "bg-primary-yellow w-6" 
-                      : "bg-white/40 hover:bg-white/80"
-                  }`}
+                  className={`w-2.5 h-1.5 rounded-full transition-all duration-300 focus:outline-none cursor-pointer ${activeSlide === idx
+                    ? "bg-primary-yellow w-6"
+                    : "bg-white/40 hover:bg-white/80"
+                    }`}
                   aria-label={`Go to slide ${idx + 1}`}
                 />
               ))}
@@ -259,15 +258,15 @@ export default function Hero() {
               }, [value]);
 
               return (
-                <span className="font-bebas text-3xl sm:text-4xl text-primary-yellow font-bold tracking-wide">
+                <span className="font-bebas text-3xl sm:text-4xl text-primary-yellow  tracking-wide">
                   {prefix}{count}{suffix}
                 </span>
               );
             };
 
             return (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 className="flex flex-col border-l border-white/10 pl-4 hover:border-primary-yellow transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -290,7 +289,7 @@ export default function Hero() {
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-60 z-20 pointer-events-none">
         <span className="text-[9px] uppercase tracking-[0.25em] text-white/40">Scroll to Explore</span>
         <div className="w-[18px] h-7 border border-white/30 rounded-full flex items-start justify-center p-1">
-          <motion.div 
+          <motion.div
             className="w-1.5 h-1.5 bg-primary-yellow rounded-full"
             animate={{
               y: [0, 8, 0],

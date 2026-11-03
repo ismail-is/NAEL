@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { 
-  ShieldCheck, 
-  Globe, 
-  DollarSign, 
-  Clock, 
+import {
+  ShieldCheck,
+  Globe,
+  DollarSign,
+  Clock,
   ArrowRight,
   Package,
   Layers,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export default function SweetWaterPage() {
-  
+
   // The 6 custom water delivery offerings beautifully paraphrased
   const waterOfferings = [
     {
@@ -86,7 +86,7 @@ export default function SweetWaterPage() {
         <div className="relative w-full h-[320px] sm:h-[400px] bg-brand-black overflow-hidden flex items-center">
           {/* Background twilight fresh water liquid */}
           <div className="absolute inset-0 z-0">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop"
               alt="Hygienic Water Resource"
               className="w-full h-full object-cover"
@@ -95,7 +95,7 @@ export default function SweetWaterPage() {
           </div>
 
           {/* Slanted Green Backdrop Overlay (Desktop only) */}
-          <div 
+          <div
             className="absolute top-0 bottom-0 left-0 w-full lg:w-[48%] bg-gradient-to-r from-primary-green to-primary-green/95 z-10 hidden lg:block"
             style={{
               clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)"
@@ -106,26 +106,26 @@ export default function SweetWaterPage() {
 
           {/* Content Container */}
           <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 flex flex-col lg:flex-row justify-between lg:items-center gap-8">
-            
+
             {/* Left Texts Breadcrumbs */}
             <div className="flex flex-col gap-2 max-w-2xl">
-              <div className="flex items-center gap-2 text-white/50 text-[9px] sm:text-xs uppercase tracking-widest font-bold mb-1">
+              <div className="flex items-center gap-2 text-white/50 text-[9px] sm:text-xs uppercase tracking-widest  mb-1">
                 <span>Home</span>
                 <span className="text-white/30">&gt;</span>
                 <span>Services</span>
                 <span className="text-white/30">&gt;</span>
                 <span className="text-primary-yellow">Sweet Water Delivery</span>
               </div>
-              <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow ">
                 SPECIALIZED IN
               </span>
-              <h1 className="text-3xl sm:text-6xl font-bebas font-extrabold text-white tracking-wider leading-none">
+              <h1 className="text-3xl sm:text-6xl font-bebas  text-white tracking-wider leading-none">
                 SWEET WATER <span className="text-primary-yellow">SUPPLY</span>
               </h1>
               <p className="text-white/80 text-[11px] sm:text-sm font-light leading-relaxed mt-2 max-w-lg">
                 Providing certified, clean, and highly hygienic sweet water delivery for industrial sites, civil works, construction projects, interior fit-out sites, and commercial hubs across Al Jubail.
               </p>
-              
+
               {/* Features Badges list */}
               <div className="flex flex-wrap gap-3 mt-4 text-[9px] uppercase tracking-wider font-semibold text-white/95">
                 <span className="bg-primary-green/45 border border-primary-yellow/20 px-3 py-1 rounded-sm flex items-center gap-1.5 backdrop-blur-sm">
@@ -150,14 +150,14 @@ export default function SweetWaterPage() {
         <div className="w-full py-16 sm:py-24 px-4 sm:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               {/* Left Column (Texts) */}
               <div className="lg:col-span-5 flex flex-col gap-6">
                 <div className="flex flex-col gap-1">
-                  <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                  <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
                     OVERVIEW
                   </span>
-                  <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-tight">
+                  <h2 className="text-3xl sm:text-5xl font-bebas  text-primary-green tracking-wide leading-tight">
                     Clean Water Resources. <br />
                     <span className="text-brand-black">Unmatched Reliability.</span>
                   </h2>
@@ -172,9 +172,9 @@ export default function SweetWaterPage() {
                   With a state-of-the-art fleet of sanitizable tankers operated by certified crews, we guarantee rapid delivery schedules with zero downtime, even for the most remote desert construction zones.
                 </p>
 
-                <a 
+                <a
                   href="#contact"
-                  className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
+                  className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs  uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
                 >
                   Get A Quote
                   <ArrowRight className="w-4 h-4 text-primary-yellow" />
@@ -200,7 +200,7 @@ export default function SweetWaterPage() {
                     icon: ShieldCheck
                   }
                 ].map((item, idx) => (
-                  <div 
+                  <div
                     key={idx}
                     className="p-5 bg-white border border-brand-black/5 rounded-xl hover:shadow-xl hover:border-primary-green/20 transition-all duration-300 flex items-start gap-4"
                   >
@@ -208,7 +208,7 @@ export default function SweetWaterPage() {
                       <item.icon className="w-5 h-5" />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-bebas text-lg sm:text-xl font-bold text-primary-green tracking-wide">
+                      <h3 className="font-bebas text-lg sm:text-xl  text-primary-green tracking-wide">
                         {item.title}
                       </h3>
                       <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
@@ -229,13 +229,13 @@ export default function SweetWaterPage() {
         {/* ========================================================= */}
         <div className="w-full bg-[#012422] py-16 sm:py-24 px-4 sm:px-8 border-t border-white/5 text-white">
           <div className="max-w-7xl mx-auto">
-            
+
             {/* Header Title */}
             <div className="flex flex-col gap-1 mb-12">
-              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
                 WHY CHOOSE US
               </span>
-              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
+              <h2 className="text-3xl sm:text-5xl font-bebas  text-white tracking-wide">
                 Our Commitment to Hygiene & Reliability
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
@@ -265,14 +265,14 @@ export default function SweetWaterPage() {
                   icon: CheckCircle
                 }
               ].map((strength, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="p-6 bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-primary-yellow/30 transition-all duration-300 rounded-sm flex flex-col items-center text-center group"
                 >
                   <div className="w-12 h-12 rounded-full bg-primary-yellow/15 flex items-center justify-center text-primary-yellow border border-primary-yellow/20 mb-4 group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
                     <strength.icon className="w-5.5 h-5.5" />
                   </div>
-                  <h3 className="font-bebas text-xl font-bold text-white tracking-wide mb-2">
+                  <h3 className="font-bebas text-xl  text-white tracking-wide mb-2">
                     {strength.title}
                   </h3>
                   <p className="text-white/60 text-[11px] sm:text-xs font-light leading-relaxed">
@@ -291,13 +291,13 @@ export default function SweetWaterPage() {
         {/* ========================================================= */}
         <div className="w-full py-16 sm:py-24 px-4 sm:px-8 bg-white border-t border-brand-black/5">
           <div className="max-w-7xl mx-auto">
-            
+
             {/* Header Titles */}
             <div className="flex flex-col gap-1 mb-12">
-              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
                 WATER SERVICES
               </span>
-              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide">
+              <h2 className="text-3xl sm:text-5xl font-bebas  text-primary-green tracking-wide">
                 Certified Water Resources for Every Need
               </h2>
               <div className="w-16 h-[3px] bg-primary-green mt-1" />
@@ -306,34 +306,33 @@ export default function SweetWaterPage() {
             {/* 6-Card Responsive Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {waterOfferings.map((item, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="flex flex-col bg-white border border-brand-black/5 shadow-sm rounded-sm hover:shadow-xl hover:border-primary-green/20 overflow-hidden transition-all duration-500 group"
                 >
                   {/* Photo cover container */}
                   <div className="relative w-full h-[200px] overflow-hidden">
                     <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
-                    
-                    <img 
-                      src={item.image} 
-                      alt={item.title} 
-                      className={`w-full transition-transform duration-700 ease-out group-hover:scale-105 ${
-                        item.customCrop 
-                          ? "h-[112%] object-cover object-top" 
-                          : "h-full object-cover"
-                      }`}
+
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className={`w-full transition-transform duration-700 ease-out group-hover:scale-105 ${item.customCrop
+                        ? "h-[112%] object-cover object-top"
+                        : "h-full object-cover"
+                        }`}
                       loading="lazy"
                     />
-                    
+
                     {/* Glowing Accent Tag overlay */}
-                    <span className="absolute top-3 left-3 z-20 bg-primary-green/90 text-primary-yellow border border-primary-yellow/20 px-2 py-0.5 rounded-sm text-[9px] uppercase tracking-widest font-bold backdrop-blur-sm">
+                    <span className="absolute top-3 left-3 z-20 bg-primary-green/90 text-primary-yellow border border-primary-yellow/20 px-2 py-0.5 rounded-sm text-[9px] uppercase tracking-widest  backdrop-blur-sm">
                       {item.tag}
                     </span>
                   </div>
 
                   {/* Descriptions block */}
                   <div className="p-6 flex flex-col flex-grow border-t border-brand-black/5 bg-white">
-                    <h3 className="font-bebas text-xl sm:text-2xl font-bold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
+                    <h3 className="font-bebas text-xl sm:text-2xl  text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-2">
                       {item.title}
                     </h3>
                     <p className="text-brand-black/75 text-[11px] sm:text-xs font-light leading-relaxed flex-grow">
@@ -353,13 +352,13 @@ export default function SweetWaterPage() {
         {/* ========================================================= */}
         <div className="w-full bg-gradient-to-b from-brand-black via-[#012422] to-brand-black py-16 sm:py-24 px-4 sm:px-8 border-t border-white/5 text-white">
           <div className="max-w-7xl mx-auto">
-            
+
             {/* Header Titles */}
             <div className="flex flex-col gap-1 mb-12 text-center items-center">
-              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+              <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
                 OUR PROCESS
               </span>
-              <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
+              <h2 className="text-3xl sm:text-5xl font-bebas  text-white tracking-wide">
                 How We Deliver
               </h2>
               <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
@@ -367,7 +366,7 @@ export default function SweetWaterPage() {
 
             {/* horizontal timeline */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative mt-16">
-              
+
               {/* Desktop connector line */}
               <div className="absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-white/10 z-0 hidden md:block" />
 
@@ -378,14 +377,14 @@ export default function SweetWaterPage() {
                 { step: "4", name: "Transport", desc: "Sanitized tankers load from certified stations and deliver." },
                 { step: "5", name: "Verification", desc: "Delivery ticket validation and water quality verification." }
               ].map((proc, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="flex flex-col items-center text-center relative z-10 group"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary-green border-2 border-primary-yellow text-primary-yellow font-bebas text-xl font-bold flex items-center justify-center shadow-lg group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
+                  <div className="w-12 h-12 rounded-full bg-primary-green border-2 border-primary-yellow text-primary-yellow font-bebas text-xl  flex items-center justify-center shadow-lg group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
                     {proc.step}
                   </div>
-                  <h3 className="font-bebas text-xl font-bold text-white tracking-wide mt-4 mb-2 group-hover:text-primary-yellow transition-colors">
+                  <h3 className="font-bebas text-xl  text-white tracking-wide mt-4 mb-2 group-hover:text-primary-yellow transition-colors">
                     {proc.name}
                   </h3>
                   <p className="text-white/60 text-[11px] sm:text-xs font-light leading-relaxed px-4">
@@ -409,7 +408,7 @@ export default function SweetWaterPage() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,204,0,0.06),transparent_60%)] pointer-events-none" />
 
               <div className="flex flex-col gap-2 max-w-xl text-center md:text-left text-white">
-                <h3 className="font-bebas text-3xl sm:text-4xl font-extrabold tracking-wide leading-none">
+                <h3 className="font-bebas text-3xl sm:text-4xl  tracking-wide leading-none">
                   Looking for Clean Water Resources?
                 </h3>
                 <p className="text-white/70 text-xs sm:text-sm font-light leading-relaxed">
@@ -419,19 +418,19 @@ export default function SweetWaterPage() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-                <a 
+                <a
                   href="#contact"
-                  className="px-6 py-3.5 bg-primary-yellow hover:bg-white text-brand-black font-semibold text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-primary-yellow/20"
+                  className="px-6 py-3.5 bg-primary-yellow hover:bg-white text-brand-black font-semibold text-xs  uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-primary-yellow/20"
                 >
                   Get A Quote
                   <ArrowRight className="w-4 h-4" />
                 </a>
 
-                <a 
+                <a
                   href="https://wa.me/966510969975"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-6 py-3.5 bg-brand-black/60 hover:bg-brand-black border border-white/10 hover:border-primary-yellow text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="px-6 py-3.5 bg-brand-black/60 hover:bg-brand-black border border-white/10 hover:border-primary-yellow text-white text-xs  uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <MessageSquare className="w-4 h-4 text-primary-yellow" />
                   WhatsApp Us

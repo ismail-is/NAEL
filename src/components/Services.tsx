@@ -1,25 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Container, 
-  Droplet, 
-  Trash2, 
-  Grid3X3, 
-  Truck, 
+import {
+  Container,
+  Droplet,
+  Trash2,
+  Grid3X3,
+  Truck,
   Users,
   Shield,
   Wrench,
   Home,
   Bus,
   Paintbrush,
-  ArrowUpRight 
+  ArrowUpRight
 } from "lucide-react";
 
 const servicesList = [
 
 
-   {
+  {
     id: 1,
     num: "1",
     title: "Interior Fit-Out Services",
@@ -29,7 +29,7 @@ const servicesList = [
     icon: Paintbrush,
     href: "/services/interior-fit-out",
   },
-   {
+  {
     id: 2,
     num: "2",
     title: "Manpower Supply",
@@ -61,7 +61,7 @@ const servicesList = [
   },
   {
     id: 5,
-    num:"5",
+    num: "5",
     title: "Sweet Water Delivery",
     subtitle: "Water Delivery",
     description: "Safe, rapid delivery of clean sweet water using a state-of-the-art tanker fleet. Catered specifically to industrial workspaces, remote construction sites, and residential reserves.",
@@ -99,7 +99,7 @@ const servicesList = [
     icon: Truck,
     href: "/services/equipment-rental",
   },
-  
+
   {
     id: 9,
     num: "9",
@@ -130,27 +130,27 @@ const servicesList = [
     icon: Home,
     href: "/services/porta-cabins",
   },
- 
+
 ];
 
 export default function Services() {
   return (
-    <section 
-      id="services" 
+    <section
+      id="services"
       className="relative bg-white py-24 px-4 sm:px-8 text-brand-black overflow-hidden"
     >
       {/* Decorative Top Accent Diagonal Line */}
       <div className="absolute top-0 left-0 w-full h-[6px] bg-gradient-to-r from-primary-green via-primary-yellow to-primary-green" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Header Block */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div className="flex flex-col gap-2">
-            <span className="text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold bg-primary-green/10 px-3 py-1.5 rounded-sm w-fit border border-primary-green/20">
+            <span className="text-xs uppercase tracking-[0.35em] text-primary-yellow  bg-primary-green/10 px-3 py-1.5 rounded-sm w-fit border border-primary-green/20">
               WHAT WE DO
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-none">
+            <h2 className="text-4xl sm:text-5xl font-bebas  text-primary-green tracking-wide leading-none">
               OUR SPECIALIZED SERVICES
             </h2>
             <div className="w-24 h-1 bg-primary-yellow mt-2" />
@@ -162,7 +162,7 @@ export default function Services() {
 
         {/* Fully Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          
+
           {servicesList.map((svc, i) => (
             <motion.div
               key={svc.id}
@@ -176,14 +176,13 @@ export default function Services() {
               {/* Service Card Top Image */}
               <div className="relative w-full h-[220px] overflow-hidden rounded-t-sm">
                 <div className="absolute inset-0 bg-brand-black/10 group-hover:bg-brand-black/0 transition-colors duration-500 z-10" />
-                <img 
-                  src={svc.image} 
+                <img
+                  src={svc.image}
                   alt={svc.title}
-                  className={`w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 ${
-                    svc.id === 2 
-                      ? "h-[112%] object-top" 
+                  className={`w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 ${svc.id === 2
+                      ? "h-[112%] object-top"
                       : "h-full"
-                  }`}
+                    }`}
                   loading="lazy"
                 />
               </div>
@@ -195,10 +194,10 @@ export default function Services() {
 
               {/* Service Card Lower Description */}
               <div className="p-6 pt-10 flex flex-col flex-grow bg-white rounded-b-sm border-t border-brand-black/5">
-                <span className="text-xs font-bold text-primary-yellow uppercase tracking-widest mb-1.5">
+                <span className="text-xs  text-primary-yellow uppercase tracking-widest mb-1.5">
                   Service {svc.num}
                 </span>
-                <h3 className="text-2xl font-bebas font-extrabold text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-3">
+                <h3 className="text-2xl font-bebas text-primary-green tracking-wide group-hover:text-primary-yellow transition-colors leading-tight mb-3">
                   {svc.title}
                 </h3>
                 <p className="text-brand-black/75 text-xs sm:text-sm font-light leading-relaxed mb-6 flex-grow">
@@ -206,10 +205,10 @@ export default function Services() {
                 </p>
 
                 <div className="w-full h-[1px] bg-brand-black/10 my-4" />
-                
-                <a 
+
+                <a
                   href={svc.href}
-                  className="text-primary-green group-hover:text-primary-yellow text-xs font-extrabold uppercase tracking-widest flex items-center gap-1.5 transition-colors"
+                  className="text-primary-green group-hover:text-primary-yellow text-xs  uppercase tracking-widest flex items-center gap-1.5 transition-colors"
                 >
                   Explore Service
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

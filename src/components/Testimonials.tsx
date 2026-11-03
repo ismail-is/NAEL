@@ -64,21 +64,21 @@ export default function Testimonials() {
   };
 
   return (
-    <section 
-      id="testimonials" 
+    <section
+      id="testimonials"
       className="bg-brand-black py-24 px-4 sm:px-8 relative overflow-hidden"
     >
       {/* Decorative glows */}
       <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-primary-green/10 blur-[120px] pointer-events-none" />
-      
+
       <div className="max-w-4xl mx-auto relative z-10">
-        
+
         {/* Header Block */}
         <div className="text-center flex flex-col items-center gap-2 mb-16">
-          <span className="text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold bg-primary-green/20 px-3 py-1.5 rounded-sm w-fit border border-primary-green/30">
+          <span className="text-xs uppercase tracking-[0.35em] text-primary-yellow  bg-primary-green/20 px-3 py-1.5 rounded-sm w-fit border border-primary-green/30">
             TESTIMONIALS
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bebas font-extrabold text-white tracking-wider leading-none">
+          <h2 className="text-4xl sm:text-5xl font-bebas  text-white tracking-wider leading-none">
             WHAT OUR <span className="text-primary-yellow">CLIENTS SAY</span>
           </h2>
           <div className="w-16 h-[3px] bg-primary-yellow mt-1" />
@@ -121,7 +121,7 @@ export default function Testimonials() {
                     <UserCheck className="w-6 h-6 stroke-[1.5]" />
                   </div>
                   <div>
-                    <h4 className="font-bebas text-lg tracking-wider text-white font-bold leading-none">
+                    <h4 className="font-bebas text-lg tracking-wider text-white  leading-none">
                       {current.name}
                     </h4>
                     <p className="text-[10px] sm:text-xs text-white/50 mt-1 uppercase tracking-wider font-semibold">
@@ -144,9 +144,8 @@ export default function Testimonials() {
                     setDirection(i > activeIndex ? 1 : -1);
                     setActiveIndex(i);
                   }}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    i === activeIndex ? "bg-primary-yellow w-6 glow-yellow" : "bg-white/20 hover:bg-white/40"
-                  }`}
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === activeIndex ? "bg-primary-yellow w-6 glow-yellow" : "bg-white/20 hover:bg-white/40"
+                    }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
@@ -154,14 +153,14 @@ export default function Testimonials() {
 
             {/* Nav Arrows */}
             <div className="flex gap-3">
-              <button 
+              <button
                 onClick={handlePrev}
                 className="w-10 h-10 rounded-sm bg-brand-light-grey border border-white/5 flex items-center justify-center text-white/70 hover:text-primary-yellow hover:border-primary-yellow/30 hover:bg-primary-green/10 transition-all duration-300"
                 aria-label="Previous Review"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
-              <button 
+              <button
                 onClick={handleNext}
                 className="w-10 h-10 rounded-sm bg-brand-light-grey border border-white/5 flex items-center justify-center text-white/70 hover:text-primary-yellow hover:border-primary-yellow/30 hover:bg-primary-green/10 transition-all duration-300"
                 aria-label="Next Review"

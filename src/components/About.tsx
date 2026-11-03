@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Target, 
-  Eye, 
+import {
+  Target,
+  Eye,
   ArrowRight,
   ShieldCheck,
   Award,
@@ -15,14 +15,14 @@ import {
 export default function About() {
   return (
     <section id="about" className="relative w-full overflow-hidden select-none bg-white">
-      
+
       {/* ========================================================= */}
       {/* 1. WHO WE ARE HEADER BANNER (Top Cinematic Block)        */}
       {/* ========================================================= */}
       <div className="relative w-full h-[280px] sm:h-[350px] bg-brand-black overflow-hidden flex items-center">
         {/* Background construction site at dusk */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
             alt="Construction Site Dusk"
             className="w-full h-full object-cover"
@@ -31,7 +31,7 @@ export default function About() {
         </div>
 
         {/* Slanted Green Backdrop Overlay (Desktop only) */}
-        <div 
+        <div
           className="absolute top-0 bottom-0 left-0 w-full lg:w-[48%] bg-gradient-to-r from-primary-green to-primary-green/95 z-10 hidden lg:block"
           style={{
             clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)"
@@ -42,16 +42,16 @@ export default function About() {
 
         {/* Content Container */}
         <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 flex flex-col lg:flex-row justify-between lg:items-center gap-8">
-          
+
           {/* Left Text Breadcrumbs */}
           <div className="flex flex-col gap-2">
-            <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow font-extrabold">
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary-yellow ">
               WHO WE ARE
             </span>
-            <h1 className="text-4xl sm:text-6xl font-bebas font-extrabold text-white tracking-wider leading-none">
+            <h1 className="text-4xl sm:text-6xl font-bebas  text-white tracking-wider leading-none">
               ABOUT <span className="text-primary-yellow">US</span>
             </h1>
-            <div className="flex items-center gap-2 text-white/50 text-[10px] sm:text-xs uppercase tracking-widest font-bold mt-2">
+            <div className="flex items-center gap-2 text-white/50 text-[10px] sm:text-xs uppercase tracking-widest  mt-2">
               <span>Home</span>
               <span className="text-white/30">&gt;</span>
               <span className="text-primary-yellow">About Us</span>
@@ -61,7 +61,7 @@ export default function About() {
           {/* Right Emblem Logo Box */}
           <div className="flex justify-center lg:justify-end items-center lg:mr-12">
             <div className="relative w-28 h-28 sm:w-36 sm:h-36 border-4 border-primary-yellow p-4 bg-brand-black/25 backdrop-blur-md flex items-center justify-center rounded-sm">
-              <img 
+              <img
                 src="/naelksa/Nael Logo White.webp"
                 alt="NAEL Logo Emblem"
                 className="w-full h-full object-contain"
@@ -79,9 +79,9 @@ export default function About() {
       <div className="w-full bg-white py-16 sm:py-24 px-4 sm:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            
+
             {/* Left Texts Column (Col 5) */}
-            <motion.div 
+            <motion.div
               className="lg:col-span-5 flex flex-col gap-6"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -89,10 +89,10 @@ export default function About() {
               transition={{ duration: 0.7 }}
             >
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+                <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
                   ABOUT NAEL
                 </span>
-                <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-primary-green tracking-wide leading-tight">
+                <h2 className="text-3xl sm:text-5xl font-bebas  text-primary-green tracking-wide leading-tight">
                   Building Trust. <br />
                   <span className="text-brand-black">Delivering Excellence.</span>
                 </h2>
@@ -102,7 +102,7 @@ export default function About() {
               <p className="text-brand-black/80 text-xs sm:text-sm font-light leading-relaxed">
                 LAMIYA AL KHALEEJ AL ITTIHAD ESTABLISHMENT FOR GENERAL CONTRACTING is a trusted name in the Kingdom of Saudi Arabia.
               </p>
-              
+
               <p className="text-brand-black/65 text-xs sm:text-sm font-light leading-relaxed">
                 We provide comprehensive Interior fit-out, Civil works, contracting, trading, cleaning, scaffolding and equipment rental services with a commitment to safety, quality and client satisfaction.
               </p>
@@ -111,9 +111,9 @@ export default function About() {
                 Our experienced team, advanced machinery and strong work ethics allow us to deliver projects efficiently and professionally across diverse industries.
               </p>
 
-              <a 
+              <a
                 href="#contact"
-                className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs font-bold uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
+                className="px-8 py-3.5 bg-primary-green hover:bg-brand-light-green text-white text-xs  uppercase tracking-widest rounded-sm w-fit transition-all duration-300 flex items-center gap-2 cursor-pointer mt-2"
               >
                 Contact Us
                 <ArrowRight className="w-4 h-4 text-primary-yellow" />
@@ -121,7 +121,7 @@ export default function About() {
             </motion.div>
 
             {/* Right Video Preview Stats Card (Col 7) */}
-            <motion.div 
+            <motion.div
               className="lg:col-span-7 flex flex-col"
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -130,7 +130,7 @@ export default function About() {
             >
               {/* Rounded Card frame */}
               <div className="relative w-full h-[360px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-brand-black/5 group">
-                <img 
+                <img
                   src="/naelksa/about_excellence.png"
                   alt="Construction Site Sunset"
                   className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-[4000ms]"
@@ -140,7 +140,7 @@ export default function About() {
 
                 {/* Central Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center z-20">
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg cursor-pointer text-primary-green hover:bg-primary-yellow hover:text-brand-black transition-all duration-300 pl-1"
@@ -160,7 +160,7 @@ export default function About() {
                     { num: "100%", label: "Client Satisfaction" },
                   ].map((stat, idx) => (
                     <div key={idx} className="flex flex-col items-center text-center">
-                      <span className="font-bebas text-2xl sm:text-3xl text-primary-yellow font-bold leading-none">{stat.num}</span>
+                      <span className="font-bebas text-2xl sm:text-3xl text-primary-yellow  leading-none">{stat.num}</span>
                       <span className="text-[9px] uppercase tracking-wider text-white/80 font-medium mt-1 leading-tight">{stat.label}</span>
                     </div>
                   ))}
@@ -179,13 +179,13 @@ export default function About() {
       {/* ========================================================= */}
       <div className="w-full bg-gradient-to-b from-brand-black via-[#012422] to-brand-black py-16 sm:py-24 px-4 sm:px-8 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Section Header */}
           <div className="flex flex-col gap-2 mb-12">
-            <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow font-extrabold">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary-yellow ">
               OUR VALUES
             </span>
-            <h2 className="text-3xl sm:text-5xl font-bebas font-extrabold text-white tracking-wide">
+            <h2 className="text-3xl sm:text-5xl font-bebas  text-white tracking-wide">
               Built on Strong Values
             </h2>
             <p className="text-white/60 max-w-xl text-xs sm:text-sm font-light leading-relaxed mt-1">
@@ -235,7 +235,7 @@ export default function About() {
                 <div className="w-12 h-12 rounded-full bg-primary-yellow/10 flex items-center justify-center text-primary-yellow border border-primary-yellow/20 mb-4 group-hover:bg-primary-yellow group-hover:text-brand-black transition-all duration-300">
                   <val.icon className="w-5.5 h-5.5" />
                 </div>
-                <h3 className="font-bebas text-xl font-bold text-white tracking-wide mb-2 group-hover:text-primary-yellow transition-colors">
+                <h3 className="font-bebas text-xl  text-white tracking-wide mb-2 group-hover:text-primary-yellow transition-colors">
                   {val.title}
                 </h3>
                 <p className="text-white/60 text-[11px] sm:text-xs font-light leading-relaxed">
@@ -255,23 +255,23 @@ export default function About() {
       <div className="w-full bg-[#fcfcfc] py-16 sm:py-24 px-4 sm:px-8 border-t border-brand-black/5">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Targets Column (Col 6) */}
-            <motion.div 
+            <motion.div
               className="lg:col-span-6 flex flex-col gap-8"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7 }}
             >
-              
+
               {/* Mission Row */}
               <div className="flex items-start gap-4.5">
                 <div className="w-12 h-12 rounded-full bg-[#02534D] flex items-center justify-center text-primary-yellow shrink-0 shadow-md">
                   <Target className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-2xl font-bebas font-extrabold text-primary-green tracking-wide leading-none">
+                  <h3 className="text-2xl font-bebas  text-primary-green tracking-wide leading-none">
                     OUR MISSION
                   </h3>
                   <p className="text-brand-black/70 text-xs sm:text-sm font-light leading-relaxed">
@@ -286,7 +286,7 @@ export default function About() {
                   <Eye className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-2xl font-bebas font-extrabold text-primary-green tracking-wide leading-none">
+                  <h3 className="text-2xl font-bebas  text-primary-green tracking-wide leading-none">
                     OUR VISION
                   </h3>
                   <p className="text-brand-black/70 text-xs sm:text-sm font-light leading-relaxed">
@@ -298,7 +298,7 @@ export default function About() {
             </motion.div>
 
             {/* Right Slanted Excavator Image Frame (Col 6) */}
-            <motion.div 
+            <motion.div
               className="lg:col-span-6 relative w-full h-[320px] sm:h-[400px] lg:h-[450px] flex items-center justify-center rounded-sm lg:overflow-visible overflow-hidden"
               initial={{ opacity: 0, scale: 0.95, x: 40 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -315,7 +315,7 @@ export default function About() {
 
               {/* Excavator Image Container (Desktop Slanted, Mobile Rectangular) */}
               <div className="absolute inset-0 w-full h-full clip-slanted overflow-hidden rounded-sm">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop"
                   alt="Heavy Excavator Sunset Skyline"
                   className="w-full h-full object-cover"

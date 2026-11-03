@@ -18,22 +18,22 @@ export default function Partners() {
   const marqueeItems = [...partnersList, ...partnersList, ...partnersList];
 
   return (
-    <section 
-      id="partners" 
+    <section
+      id="partners"
       className="bg-[#0b0b0b] py-20 px-4 sm:px-8 border-t border-white/5 relative overflow-hidden"
     >
       {/* Background radial highlight */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary-green/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Header Block with slider control aesthetics */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
-            <span className="text-[10px] uppercase tracking-[0.4em] text-primary-yellow font-bold">
+            <span className="text-[10px] uppercase tracking-[0.4em] text-primary-yellow ">
               TRUSTED COLLABORATION
             </span>
-            <h2 className="text-3xl font-bebas font-extrabold text-white tracking-wider uppercase leading-none">
+            <h2 className="text-3xl font-bebas  text-white tracking-wider uppercase leading-none">
               OUR CLIENTS & PARTNERS
             </h2>
             <div className="w-12 h-0.5 bg-primary-green mt-1" />
@@ -52,7 +52,7 @@ export default function Partners() {
 
         {/* Auto Scrolling Marquee Lane */}
         <div className="relative w-full overflow-hidden no-scrollbar py-4 mask-text">
-          
+
           {/* Shadow Faders for edge blending */}
           <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-brand-black to-transparent z-20 pointer-events-none" />
           <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-brand-black to-transparent z-20 pointer-events-none" />
@@ -62,7 +62,7 @@ export default function Partners() {
             {marqueeItems.map((partner, index) => {
               const PartnerIcon = partner.icon;
               return (
-                <div 
+                <div
                   key={index}
                   className="w-[240px] sm:w-[280px] p-6 rounded-sm glass-card border border-white/5 backdrop-blur-md flex items-center gap-4 hover:border-primary-yellow/30 hover:bg-primary-green/5 transition-all duration-500 interactive-card cursor-pointer group"
                 >
@@ -73,7 +73,7 @@ export default function Partners() {
 
                   {/* Brand Information */}
                   <div className="flex flex-col">
-                    <span className="font-bebas text-lg sm:text-xl font-bold tracking-wider text-white group-hover:text-primary-yellow transition-colors leading-none">
+                    <span className="font-bebas text-lg sm:text-xl  tracking-wider text-white group-hover:text-primary-yellow transition-colors leading-none">
                       {partner.name}
                     </span>
                     <span className="text-[9px] uppercase tracking-widest text-white/40 mt-1 font-medium group-hover:text-white/60 transition-colors leading-tight">
