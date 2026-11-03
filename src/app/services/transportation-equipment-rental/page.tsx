@@ -92,7 +92,7 @@ export default function TransportationEquipmentRentalPage() {
       title: "Equipment Shifting & Delivery",
       desc: "Dedicated equipment shifting and delivery vehicles for seamless relocation of construction machinery, modular structures, and industrial assets between project sites.",
       // Wheel loader being delivered — local project image
-      image: "/naelksa/wheel_loaders.png",
+      image: "/naelksa/img/62.jpeg",
       tag: "Equipment Shifting"
     }
   ];
