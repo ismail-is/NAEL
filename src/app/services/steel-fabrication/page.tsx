@@ -33,7 +33,7 @@ export default function SteelFabricationPage() {
     {
       title: "Industrial Piping & Spooling",
       desc: "High-precision pipe spool fabrication for petrochemical plants, designed to handle extreme high-pressure fluid and gas transfers.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/60.jpeg",
       tag: "Pipe Spools"
     },
     {

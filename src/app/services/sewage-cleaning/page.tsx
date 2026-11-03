@@ -72,7 +72,7 @@ export default function SewageCleaningPage() {
           {/* Background twilight fresh water liquid */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/img/59.jpeg"
               alt="Industrial Drainage Utilities"
               className="w-full h-full object-cover"
             />

@@ -25,7 +25,7 @@ const servicesList = [
     title: "Interior Fit-Out Services",
     subtitle: "Interior Fit-Out",
     description: "Turnkey interior fit-out and architectural finishing solutions for commercial offices, industrial control rooms, retail facilities, acoustic partitions, and MEP integration.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+    image: "/naelksa/img/54.jpeg",
     icon: Paintbrush,
     href: "/services/interior-fit-out",
   },

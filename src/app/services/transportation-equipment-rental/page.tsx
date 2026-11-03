@@ -29,21 +29,21 @@ export default function TransportationEquipmentRentalPage() {
       title: "Coasters & Buses",
       desc: "Comfortable and well-maintained coasters and buses for crew transportation, personnel shuttles, and workforce logistics across industrial and construction project sites.",
       // White minibus / coaster — crew passenger transport
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/Services/Coaster.webp",
       tag: "Passenger Transport"
     },
     {
       title: "Flatbed Trailers",
       desc: "Heavy-duty flatbed trailers for transporting oversized equipment, structural steel, and large cargo across long-distance and short-haul logistics requirements.",
       // Flatbed semi truck on open road
-      image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/56.jpeg",
       tag: "Heavy Haulage"
     },
     {
       title: "Pickup Trucks",
       desc: "Reliable 4WD and standard pickup trucks for site supervisors, material delivery, and day-to-day logistics support across project sites and industrial zones.",
       // 4WD pickup truck in desert/site terrain
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/57.jpeg",
       tag: "Light Transport"
     },
     {
@@ -57,7 +57,7 @@ export default function TransportationEquipmentRentalPage() {
       title: "Tipper Trucks",
       desc: "High-capacity tipper trucks for bulk aggregate, sand, soil, and demolition waste removal, ensuring fast and efficient material handling on all project types.",
       // Local project dump/tipper truck image
-      image: "/naelksa/haulage_dump_trucks.png",
+      image: "/naelksa/img/58.jpeg",
       tag: "Bulk Material"
     },
     {
@@ -78,14 +78,14 @@ export default function TransportationEquipmentRentalPage() {
       title: "Forklifts & Material Handling",
       desc: "Industrial forklifts and specialized material handling vehicles for warehouse operations, container loading, pallet movement, and on-site logistics management.",
       // Forklift in warehouse with pallets
-      image: "https://images.unsplash.com/photo-1586528116493-a029325540fa?q=80&w=800&auto=format&fit=crop",
+      image: "/naelksa/img/61.jpeg",
       tag: "Material Handling"
     },
     {
       title: "Heavy-Duty Transport Vehicles",
       desc: "Purpose-built heavy transport vehicles and lowboy trailers for moving machinery, precast units, industrial modules, and oversized loads safely and efficiently.",
       // Verified: semi-trucks driving on highway — Pexels #2199293
-      image: "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/naelksa/img/55.jpeg",
       tag: "Heavy Transport"
     },
     {
@@ -111,7 +111,7 @@ export default function TransportationEquipmentRentalPage() {
           {/* Background image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop"
+              src="/naelksa/Services/Coaster.webp"
               alt="Transportation Equipment"
               className="w-full h-full object-cover"
             />
