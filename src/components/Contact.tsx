@@ -43,7 +43,7 @@ Message: ${formData.message || "N/A"}`;
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
-      window.open(`https://wa.me/966510969975?text=${encoded}`, "_blank");
+      window.open(`https://wa.me/966566539773?text=${encoded}`, "_blank");
 
       setFormData({
         name: "",
@@ -65,7 +65,7 @@ Service: ${formData.service}
 Message: ${formData.message || "N/A"}`;
 
     const encoded = encodeURIComponent(text);
-    window.open(`https://wa.me/966510969975?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/966566539773?text=${encoded}`, "_blank");
   };
 
   return (
@@ -144,7 +144,7 @@ Message: ${formData.message || "N/A"}`;
                   <div>
                     <h4 className="text-sm  text-white uppercase tracking-wider">Inquiries Desk</h4>
                     <p className="text-white/60 text-xs sm:text-sm font-light mt-1 flex flex-col gap-1">
-                      <a href="mailto:ismail@naelksa.com" className="hover:text-primary-yellow transition-colors">ismail@naelksa.com</a>
+                      {/* <a href="mailto:ismail@naelksa.com" className="hover:text-primary-yellow transition-colors">ismail@naelksa.com</a> */}
                       <a href="mailto:info@naelksa.com" className="hover:text-primary-yellow transition-colors">info@naelksa.com</a>
                     </p>
                   </div>
@@ -262,18 +262,18 @@ Message: ${formData.message || "N/A"}`;
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full h-11 bg-brand-light-grey border border-white/10 px-4 text-xs text-white rounded-sm focus:outline-none focus:border-primary-yellow transition-colors"
                   >
-                    <option value="Container Trading">1. Specialized Container Trading</option>
-                    <option value="Sweet Water Delivery">2. Sweet Water Delivery</option>
-                    <option value="Sewage Cleaning Services">3. Sewage Vacuum Suction</option>
-                    <option value="Scaffolding Services">4. Scaffolding Services</option>
-                    <option value="Equipment & Machinery Rental">5. Heavy Equipment Rental</option>
-                    <option value="Manpower Supply">6. Manpower Supply</option>
-                    <option value="Industrial Fencing">7. Industrial Fencing Solutions</option>
-                    <option value="Steel Fabrication">8. Steel Fabrication</option>
-                    <option value="Porta Cabins">9. Porta Cabins</option>
-                    <option value="Transportation Equipment Rental">10. Transportation Equipment Rental</option>
-                    <option value="Interior Fit-Out">11. Interior Fit-Out</option>
-                    <option value="Civil Works">12. Civil Works</option>
+                    <option value="Interior Fit-Out Services">1.Interior Fit-Out Services</option>
+                    <option value="Manpower Supply">2. Manpower Supply</option>
+                    <option value="Coaster, Bus & Transportation Rental">3. Coaster, Bus & Transportation Rental</option>
+                    <option value="Specialized in Container Trading">4. Specialized in Container Trading</option>
+                    <option value="Sweet Water Delivery">5. Sweet Water Delivery</option>
+                    <option value="Sewage Cleaning Services">6. Sewage Cleaning Services</option> 
+                    <option value="Scaffolding Services">7. Scaffolding Services</option>
+
+                    <option value="Equipment & Machinery Rental">8. Equipment & Machinery Rental</option>
+                    <option value="Fencing Services">9. Fencing Services</option>
+                    <option value="Steel Fabrication">10. Steel Fabrication</option>
+                    <option value="Porta Cabins">11. Porta Cabins</option>
                   </select>
                 </div>
               </div>
@@ -308,19 +308,19 @@ Message: ${formData.message || "N/A"}`;
                     </>
                   ) : (
                     <>
-                      Submit Request <Send className="w-4 h-4 text-primary-yellow" />
+                      Submit  <Send className="w-4 h-4 text-primary-yellow" />
                     </>
                   )}
                 </button>
 
-                <button
+                {/* <button
                   type="button"
                   onClick={handleWhatsAppQuote}
                   className="py-3.5 px-6 bg-brand-black border border-white/10 hover:border-[#25D366] text-white text-xs  uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer group"
                 >
                   <MessageSquare className="w-4 h-4 text-[#25D366] group-hover:scale-110 transition-transform" />
                   Submit on WhatsApp
-                </button>
+                </button> */}
               </div>
 
               {/* <span className="text-[10px] text-white/30 flex items-center gap-1.5 mt-2">
